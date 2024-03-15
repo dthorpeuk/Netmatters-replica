@@ -35,6 +35,7 @@
 $nav-height: 100px;
 $nav-item-width:150px;
 $base__font-size : 16px;
+$tab-grid-width: 60%;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -83,6 +84,7 @@ $drop-down-colors:(
 
 // Breakpoints
 
-$brkpoint-sm    : 1px;
-$brkpoint-md    : 768px;
-$brkpoint-lg    : 1100px;
+$brkpoint-xsm    : 1px; $brkpoint-sm-up:768px;
+$brkpoint-sm    : 769px; $brkpoint-md-up:992px;
+$brkpoint-md    : 993px; $brkpoint-bg-up:1200px;
+$brkpoint-lg    : 1201px;

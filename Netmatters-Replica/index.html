@@ -10,23 +10,35 @@
             <header>
                 
                     <div class="header-inner"><!--The part of the header that always shows-->
-                        
+                        <!-- <div class="container"> -->
                         <div class="header-logo"><img src = "images/f-logo.webp"></div>
                         <div class="header-buttons" >
-                            <a  class="btn support-btn" >Support</a>
-                            <a class="btn" href="">Contact</a>
-                            <a class="btn img-btn" href=""><img src="images/search.svg" ></a>
+                            <a  class="btn support-btn reveal-medium" ><div class="icon-support"></div>Support</a>
+                            <a class="btn contact-btn reveal-medium" href=""><div class="icon-contact"></div>Contact</a>
+                            <a class="btn contact-btn-sm" href=""><div class="icon-contact-sm"></div></a>
+                            <form class="search-bar">
+                                <input type="text" placeholder="Search..." class="search-box reveal-large">
+                                <button type="submit"><div class = "icon-search"></div> </button>
+                            </form>
+                            <a class="btn hamburger-btn"><div class="icon-ham"></div></a>
+
                         </div>
+
+                        <!-- </div> -->
                     </div>
-                    <div class="nav"> 
+                    <form class = "search-bar-small">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><div class="icon-search-sm"></div></button>
+                    </form>
+                    <div class="nav reveal-medium"> 
                         <div class ="container">
                             
                             <ul>
                                 <li class="software nav-item nav-item-1">
                                     
-                                    <a class="nav-item-content" ><span class ="icon-apps"></span>
+                                    <a class="nav-item-content" ><span class ="icon-apps nav__item--icon nav__item--icon-1"></span>
                                         <small>Bespoke</small>
-                                        Software
+                                        <span class = "nav-text">Software</span>
                                     </a>
                                     <div class="triangle-down">
 
@@ -136,22 +148,22 @@
 <!--Nav2-->
 <li class="support nav-item nav-item-2">
                                     
-    <a class="nav-item-content" ><span class ="icon-apps"></span>
-        <small>Bespoke</small>
-        Software
+    <a class="nav-item-content" ><span class ="icon-apps nav__item--icon nav__item--icon-2"></span>
+        <small>IT</small>
+        <span class = "nav-text">Support</span>
     </a>
     <div class="triangle-down">
 
     </div>
     <div class="nav nav__item--dropdown-2 nav__item--dropdown">
     <ul class="container">
-        <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
+        <li class="h2 sub-menu-banner-title">Our IT Services</li>
             <li>
             <a>
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text ">Bespoke CRM</span>
+            <span class ="link-text ">Managed IT Support</span>
             </a> 
         </li>
         <li>
@@ -159,7 +171,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Business Automation</span>
+            <span class ="link-text">Business IT Support</span>
             </a> 
         </li>
         <li>
@@ -167,7 +179,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Software Integrations</span>
+            <span class ="link-text">Office 365 for Business</span>
             </a> 
         </li>
         <li>
@@ -175,7 +187,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Mobile App Development</span>
+            <span class ="link-text">IT Consultancy</span>
             </a> 
         </li>
         <li>
@@ -183,7 +195,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Bespoke Databases</span>
+            <span class ="link-text">Cloud Service Provider</span>
             </a> 
         </li>
         <li>
@@ -191,79 +203,32 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Sharepoint Development</span>
+            <span class ="link-text">Data Backup & Disaster Recovery</span>
             </a> 
         </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Operation Systems</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Business Central Implementation</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Internet of Things (IoT) Software</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Intranet Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Customer Portal Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Reporting Hub</span>
-            </a> 
-        </li>
+        
     </ul> 
 </div>
 </li>
 <!--Nav3-->
 <li class="software nav-item nav-item-3">
                                     
-    <a class="nav-item-content" ><span class ="icon-apps"></span>
-        <small>Bespoke</small>
-        Software
+    <a class="nav-item-content" ><span class ="icon-apps nav__item--icon nav__item--icon-3"></span>
+        <small>Digital</small>
+        <span class = "nav-text">Marketing</span>
     </a>
     <div class="triangle-down">
 
     </div>
     <div class="nav nav__item--dropdown-3 nav__item--dropdown">
     <ul class="container">
-        <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
+        <li class="h2 sub-menu-banner-title">Our Digital Marketing Services</li>
             <li>
             <a>
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text ">Bespoke CRM</span>
+            <span class ="link-text ">Search Engine Optimisation (SEO)</span>
             </a> 
         </li>
         <li>
@@ -271,7 +236,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Business Automation</span>
+            <span class ="link-text">Pay Per Click Advertising (PPC)</span>
             </a> 
         </li>
         <li>
@@ -279,7 +244,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Software Integrations</span>
+            <span class ="link-text">Conversion Rate Optimisation (CRO)</span>
             </a> 
         </li>
         <li>
@@ -287,7 +252,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Mobile App Development</span>
+            <span class ="link-text">Email Marketing</span>
             </a> 
         </li>
         <li>
@@ -295,7 +260,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Bespoke Databases</span>
+            <span class ="link-text">Social Media Marketing</span>
             </a> 
         </li>
         <li>
@@ -303,79 +268,32 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Sharepoint Development</span>
+            <span class ="link-text">Content Marketing</span>
             </a> 
         </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Operation Systems</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Business Central Implementation</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Internet of Things (IoT) Software</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Intranet Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Customer Portal Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Reporting Hub</span>
-            </a> 
-        </li>
+       
     </ul> 
 </div>
 </li>
 <!--Nav4-->
 <li class="software nav-item nav-item-4">
                                     
-    <a class="nav-item-content" ><span class ="icon-apps"></span>
-        <small>Bespoke</small>
-        Software
+    <a class="nav-item-content" ><span class ="icon-apps nav__item--icon nav__item--icon-4"></span>
+        <small>Telecoms</small>
+        <span class = "nav-text">Services</span>
     </a>
     <div class="triangle-down">
 
     </div>
     <div class="nav nav__item--dropdown-4 nav__item--dropdown">
     <ul class="container">
-        <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
+        <li class="h2 sub-menu-banner-title">Our Telecoms Services</li>
             <li>
             <a>
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text ">Bespoke CRM</span>
+            <span class ="link-text ">Business Mobile</span>
             </a> 
         </li>
         <li>
@@ -383,7 +301,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Business Automation</span>
+            <span class ="link-text">Hosted VoIP Provider</span>
             </a> 
         </li>
         <li>
@@ -391,7 +309,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Software Integrations</span>
+            <span class ="link-text">Business VoIP Systems</span>
             </a> 
         </li>
         <li>
@@ -399,7 +317,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Mobile App Development</span>
+            <span class ="link-text">Business Broadband</span>
             </a> 
         </li>
         <li>
@@ -407,7 +325,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Bespoke Databases</span>
+            <span class ="link-text">Leased Lines Provider</span>
             </a> 
         </li>
         <li>
@@ -415,79 +333,32 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Sharepoint Development</span>
+            <span class ="link-text">3CX Systems</span>
             </a> 
         </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Operation Systems</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Business Central Implementation</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Internet of Things (IoT) Software</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Intranet Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Customer Portal Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Reporting Hub</span>
-            </a> 
-        </li>
+       
     </ul> 
 </div>
 </li>
 <!--Nav5-->
 <li class="software nav-item nav-item-5">
                                     
-    <a class="nav-item-content" ><span class ="icon-apps"></span>
-        <small>Bespoke</small>
-        Software
+    <a class="nav-item-content" ><span class ="icon-apps nav__item--icon nav__item--icon-5"></span>
+        <small>Web</small>
+        <span class = "nav-text">Design</span>
     </a>
     <div class="triangle-down">
 
     </div>
     <div class="nav nav__item--dropdown-5 nav__item--dropdown">
     <ul class="container">
-        <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
+        <li class="h2 sub-menu-banner-title">Our Web Design Services</li>
             <li>
             <a>
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text ">Bespoke CRM</span>
+            <span class ="link-text ">Bespoke Website Design</span>
             </a> 
         </li>
         <li>
@@ -495,7 +366,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Business Automation</span>
+            <span class ="link-text">eCommerce Website Design</span>
             </a> 
         </li>
         <li>
@@ -503,7 +374,15 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Software Integrations</span>
+            <span class ="link-text">Pay Monthly Websites</span>
+            </a> 
+        </li>
+        <li>
+            <a>
+            <span class="link-icon-container">
+                <span><img src = "images/cogs.svg"></span>
+            </span>
+            <span class ="link-text">Branding & Design</span>
             </a> 
         </li>
         <li>
@@ -519,87 +398,32 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Bespoke Databases</span>
+            <span class ="link-text">Web Hosting</span>
             </a> 
         </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Sharepoint Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Operation Systems</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Business Central Implementation</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Internet of Things (IoT) Software</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Intranet Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Customer Portal Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Reporting Hub</span>
-            </a> 
-        </li>
+        
     </ul> 
 </div>
 </li>
 <!--Nav6-->
 <li class="software nav-item nav-item-6">
                                     
-    <a class="nav-item-content" ><span class ="icon-apps"></span>
-        <small>Bespoke</small>
-        Software
+    <a class="nav-item-content" ><span class ="icon-apps nav__item--icon nav__item--icon-6"></span>
+        <small>Cyber</small>
+        <span class = "nav-text">Security</span>
     </a>
     <div class="triangle-down">
 
     </div>
     <div class="nav nav__item--dropdown-6 nav__item--dropdown">
     <ul class="container">
-        <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
+        <li class="h2 sub-menu-banner-title">Our Cyber Security Services</li>
             <li>
             <a>
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text ">Bespoke CRM</span>
+            <span class ="link-text ">Cyber Security Assessment</span>
             </a> 
         </li>
         <li>
@@ -607,7 +431,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Business Automation</span>
+            <span class ="link-text">Cyber Security Management</span>
             </a> 
         </li>
         <li>
@@ -615,7 +439,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Software Integrations</span>
+            <span class ="link-text">Cyber Penetration Testing</span>
             </a> 
         </li>
         <li>
@@ -623,7 +447,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Mobile App Development</span>
+            <span class ="link-text">Cyber Essentials Certification</span>
             </a> 
         </li>
         <li>
@@ -631,7 +455,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Bespoke Databases</span>
+            <span class ="link-text">PCI Compliance</span>
             </a> 
         </li>
         <li>
@@ -639,79 +463,32 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Sharepoint Development</span>
+            <span class ="link-text">Hacking Prevention</span>
             </a> 
         </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Operation Systems</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Business Central Implementation</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Internet of Things (IoT) Software</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Intranet Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Customer Portal Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Reporting Hub</span>
-            </a> 
-        </li>
+        
     </ul> 
 </div>
 </li>
 <!--Nav7-->
 <li class="software nav-item nav-item-7">
                                     
-    <a class="nav-item-content" ><span class ="icon-apps"></span>
-        <small>Bespoke</small>
-        Software
+    <a class="nav-item-content" ><span class ="icon-apps nav__item--icon nav__item--icon-7"></span>
+        <small>Developer</small>
+        <span class = "nav-text">Course</span>
     </a>
     <div class="triangle-down">
 
     </div>
     <div class="nav nav__item--dropdown-7 nav__item--dropdown">
     <ul class="container">
-        <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
+        <li class="h2 sub-menu-banner-title">Our Developer Course Services</li>
             <li>
             <a>
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text ">Bespoke CRM</span>
+            <span class ="link-text ">Train For A Career In Tech</span>
             </a> 
         </li>
         <li>
@@ -719,7 +496,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Business Automation</span>
+            <span class ="link-text">Skills Bootcamp</span>
             </a> 
         </li>
         <li>
@@ -727,7 +504,7 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Software Integrations</span>
+            <span class ="link-text">Scion Scheme Frequently Asked Questions</span>
             </a> 
         </li>
         <li>
@@ -735,73 +512,10 @@
             <span class="link-icon-container">
                 <span><img src = "images/cogs.svg"></span>
             </span>
-            <span class ="link-text">Mobile App Development</span>
+            <span class ="link-text">Scion Collaborators</span>
             </a> 
         </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Bespoke Databases</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Sharepoint Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Operation Systems</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Business Central Implementation</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Internet of Things (IoT) Software</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Intranet Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Customer Portal Development</span>
-            </a> 
-        </li>
-        <li>
-            <a>
-            <span class="link-icon-container">
-                <span><img src = "images/cogs.svg"></span>
-            </span>
-            <span class ="link-text">Reporting Hub</span>
-            </a> 
-        </li>
+   
     </ul> 
 </div>
 </li>
@@ -833,11 +547,14 @@
         </div>
         <!--Central section-->
         <!--Slick ticker-->
-        <div class="slick-container"></div>
+        <div class="slick-container"><img src="images/home-YLei.webp">
+        
+        </div>
         <!--Service tabs-->
-        <div class = "container">
+        <section>
+        <div class = "services-container container">
             <div class="services-header regular"><h2>Our Services</h2>
-            <a href="#"><span>View Our Work </span><img src="images/arrow-right2.svg"></a>
+            <a href="#"><span>View Our Work </span><span class="icon-arrow"></span></a>
         </div>
         <div class="tabs-container">
            
@@ -848,7 +565,7 @@
                     </div>
                         <span class="h3 tab-header">Bespoke Software</span><br>
                         <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-                        <span class="tab__button btn">Read More</span>
+                        <span class="tab__button">Read More</span>
                     </a>
             </div>
         <!-- </div> -->
@@ -859,7 +576,7 @@
             </div>
                 <span class="h3 tab-header">Bespoke Software</span><br>
                 <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-                <span class="tab__button btn">Read More</span>
+                <span class="tab__button">Read More</span>
             </a>
     </div>
     <div class="tab tab3">
@@ -869,7 +586,7 @@
         </div>
             <span class="h3 tab-header">Bespoke Software</span><br>
             <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-            <span class="tab__button btn">Read More</span>
+            <span class="tab__button">Read More</span>
         </a>
 </div>
 <div class="tab tab4">
@@ -879,7 +596,7 @@
     </div>
         <span class="h3 tab-header">Bespoke Software</span><br>
         <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-        <span class="tab__button btn">Read More</span>
+        <span class="tab__button">Read More</span>
     </a>
 </div>
 <div class="tab tab5">
@@ -889,7 +606,7 @@
     </div>
         <span class="h3 tab-header">Bespoke Software</span><br>
         <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-        <span class="tab__button btn">Read More</span>
+        <span class="tab__button">Read More</span>
     </a>
 </div>
 <div class="tab tab6">
@@ -899,7 +616,7 @@
     </div>
         <span class="h3 tab-header">Bespoke Software</span><br>
         <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-        <span class="tab__button btn">Read More</span>
+        <span class="tab__button">Read More</span>
     </a>
 </div>
 <div class="tab tab7">
@@ -909,15 +626,199 @@
     </div>
         <span class="h3 tab-header">Bespoke Software</span><br>
         <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-        <span class="tab__button btn">Read More</span>
+        <span class="tab__button">Read More</span>
     </a>
 </div>
     </div>
 </div>
+</section>
+
+<!-- Brand Section -->
+<div class="brand-section">
+    <div class="container brand-container">
+        <div class="brand__col brand__col1 container">
+            <h2>Welcome To Netmatters</h2>
+            <p>
+<strong>
+    <span>Netmatters is a leading</span>
+    <a href="">Bespoke Software</a>
+    <span>,</span>
+    <a href="">IT Support</a>
+    <span>, and</span>
+    <a href="">Digital Marketing</a>
+    <span>Company based in the East of England with offices in</span>
+    <a href="">London</a>
+    <span>,</span>
+    <a href="">Cambridge</a>
+    <span>,</span>
+    <a href="">Wymondham</a>
+    <span>, and</span>
+    <a href="">Great Yarmouth.</a>
+</strong>
 
 
+            </p>
+            <p>
+                We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions. 
+            </p>
+            <P>
+                We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.
+            </P>
+            <div class="brand__col__buttons brand__col1__buttons">
+                <a href="" class = "btn brandbtn">Why Choose Us?<span class="icon-arrow"></span></a>
+                <a href="" class = "btn brandbtn">Our Culture<span class="icon-arrow"></span></a>
+            </div>
+        </div>
+        <div class="brand__col brand__col2">
+            <h2>What Our Clients Think</h2>
+            <div class="brand__col2__stars"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></div>
+        <p>
+            <span class="client-quote">
+                Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
+            </span>
+        </p>
+        <p>
+            <span class="client-quote-author">
+            <span>Eleanor Bishop, Head of Marketing - </span>
+            <a href="">Ashcroft Partnership LLP</a>
+            </span>
+        </p>
+        <div class="brand__col__buttons brand__col2__buttons">
+            <a href="" class = "btn googlebtn">Google Reviews<span class="icon-arrow"></span></a>
+            <a href="" class = "btn trustbtn">Trustpilot Reviews<span class="icon-arrow"></span></a>
+        </div>
+        </div>
 
-<div class = "testContainer"> 
+    </div>
+</div>
+<!-- News Section -->
+<div class="news-section">
+    <div class="container news-container">
+        <div class="news-header">
+            <div class="services-header regular"><h2>Latest News</h2>
+                <a href="#"><span>View All</span><span class="icon-arrow"></span></a>
+        </div>
+        <div class="news-items">
+            <div class="news-item">
+                <a href="">
+                    <div class="image-container">
+                       <a href="" class="category">News</a>
+                       <a href="" class="image-standard"><img src="images/news-item1.png"></a>
+                    </div>
+                    <div class="news-content">
+                        <h3>
+                            <a href ="#">
+                                Emily Mackley - Netmatters 5 Year Legend
+                            </a>
+                        </h3>
+                        <p>Today, we celebrate the brilliant accomplishments of Emily Mackley as she receives the 5 Year Legend...</p>
+                    <span class="btn" href="#">Read More</span>
+                    <div class="news-user">
+                        <div class = "news-user-avatar">
+                            <img src="images/netmatters-avatar.webp">
+                        </div>
+                        <div class="news-user-details">
+                            <strong>Posted by Netmatters</strong>
+                            <br>
+                            <span>6th March 2024</span>
+
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="">
+                    <div class="image-container">
+                       <a href="" class="category">News</a>
+                       <a href="" class="image-standard"><img src="images/news-item2.webp"></a>
+                    </div>
+                    <div class="news-content">
+                        <h3>
+                            <a href ="#">           
+                    February Notables 2024 - Celebrating Our Team
+                            </a>
+                        </h3>
+                        <p>Celebrating the achievements and dedication of our staff, at Netmatters, we put aside some time each...</p>
+                    <span class="btn" href="#">Read More</span>
+                    <div class="news-user">
+                        <div class = "news-user-avatar">
+                            <img src="images/netmatters-avatar.webp">
+                        </div>
+                        <div class="news-user-details">
+                            <strong>Posted by Netmatters</strong>
+                            <br>
+                            <span>6th March 2024</span>
+
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <div class="news-item">
+                <a href="">
+                    <div class="image-container">
+                       <a href="" class="category">News</a>
+                       <a href="" class="image-standard"><img src="images/news-item3.webp"></a>
+                    </div>
+                    <div class="news-content">
+                        <h3>
+                            <a href ="#">     
+                    East Anglian Air Ambulance - Introducing a 3C...
+                            </a>
+                            <span class ="read-time"> - 4 minute read</span>
+                        </h3>
+                        <p>The Client Championing ‘Your Local Life-Saving Charity’ the East Anglian Air Ambulance (EAAA) is a r...</p>
+                    <span class="btn" href="#">Read More</span>
+                    <div class="news-user">
+                        <div class = "news-user-avatar">
+                            <img src="images/netmatters-avatar.webp">
+                        </div>
+                        <div class="news-user-details">
+                            <strong>Posted by Netmatters</strong>
+                            <br>
+                            <span>26th February 2024</span>
+
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Newsletter Section -->
+<div class="newsletter-section">
+    <div class="container newsletter-content">
+        <form class="sign-up">
+            <h2>Email Newsletter Sign-Up</h2>
+            <div class="sign-up-inputs">
+                <div class="nl-inputgroup">
+                    <label for="nl-name">Your Name</label>
+                    <input type="text" class="nl-name">
+                </div>
+                <div class="nl-inputgroup">
+                    <label for="nl-email">Your Email</label>
+                    <input type="text" class= "nl-email">
+                </div>
+            </div>
+            <div class="form-tick-section">
+                <span class="nl-checkbox">
+                    <input type="checkbox" value="1">
+                    <span class="checkmark"></span>
+                </span>
+                <span class="nl-checkbox-text">
+                    Please tick this box if you wish to receive marketing information from us.
+                    Please see our</span><span> <a href="#">Privacy Policy</a></span><span> for more information on how we keep your data safe.
+                    </span>
+                    
+            </div>
+            <button name="submit" class="btn">Subscribe</button>
+        </form>
+    </div>
+</div>
+<!-- Footer Section -->
+<!-- <div class = "testContainer"> 
     <ul>
         <li>
             <span>Ab</span>
@@ -936,11 +837,148 @@
         </li>
     </ul>
 </div>
-<div class="testIcon icon- icon-connection"></div>
+<div class="testIcon icon- icon-connection"></div> -->
 
         <footer>
+            <div class="container footer">
+                <div class="footer-content">
+                    <div class="footer-company-info">
+                        <div class="footer-logo">
+                            <img src="images/nm-logo-white-med.webp">
+                            <h4>Follow Us On:</h4>
+                            <div class="footer-social"></div>
+                        </div>
+                    </div>
+                    <div class="footer-cols">
+                        <div class = "f-col f-col1">
+                            <h4>About Netmatters</h4>
+                            <ul class="f-list">
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cookie Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Data Retention & Disposal</a>
+                                </li>
+                                <li>
+                                    <a href="#">Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">CCTV Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Enviromental Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Term & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "f-col f-col2">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Bespoke Software</a>
+                                </li>
+                                <li>
+                                    <a href="#">IT Support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Telecoms Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Web Design</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cyber Security</a>
+                                </li>
+                                <li>
+                                    <a href="#">Developer Training</a>
+                                </li>
 
+                            </ul>
+                        </div>
+                        <div class = "f-col f-col3">
+                            <h4>Our Industries</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Financial Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Construction</a>
+                                </li>
+                                <li>
+                                    <a href="#">Retail & E-Commerce</a>
+                                </li>
+                                <li>
+                                    <a href="#">Non-Profits</a>
+                                </li>
+                                <li>
+                                    <a href="#">SME's</a>
+                                </li>
+                                <li>
+                                    <a href="#">Healthcare</a>
+                                </li>
+                                <li>
+                                    <a href="#">Education & Training</a>
+                                </li>
+                                <li>
+                                    <a href="#">Travel & Leisure</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class = "f-col f-col4">
+                            <h4>Locations</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">London Office</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cambridge Office</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wymondham Office</a>
+                                </li>
+                                <li>
+                                    <a href="#">Great Yarmouth Office</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <div class="licence">         
+            © Copyright Netmatters 2024. 
+            
+            All rights reserved. 
+            <ul>
+                <li>Sitemap</li>
+            </ul>
+                </div>
+            </div>
+        </div>
     </body>
 
 

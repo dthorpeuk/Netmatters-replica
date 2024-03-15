@@ -1,12 +1,37 @@
 //Media Queries
 @mixin mq($s){
-    @if $s == "small"{
+    @if $s == "x-small"{
+        @media (max-width: $brkpoint-sm){
+            @content;
+        }
+    }
+    @else if $s == "small"{
         @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md){
             @content;
         }
     }
+    @else if $s == "small-up"{
+        @media (min-width: $brkpoint-sm) {
+            @content;
+        }
+    }
+    @else if $s == "small-down"{
+        @media (max-width: $brkpoint-md){
+            @content;
+        }
+    }
     @else if $s == "medium"{
+        @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg){
+            @content;
+        }
+    }
+    @else if $s == "medium-up"{
         @media (min-width: $brkpoint-md){
+            @content;
+        }
+    }
+    @else if $s == "medium-down"{
+        @media (max-width: $brkpoint-lg){
             @content;
         }
     }
@@ -15,6 +40,17 @@
             @content;
         }
     }
+    // @else if $s == "large"{
+    //     @media (min-width: $brkpoint-lg){
+    //         @content;
+    //     }
+    // }
+}
+@mixin reveal($disp,$min){
+   @include mq($min){
+    display: #{$disp};
+    }
+
 }
 @mixin standard-text-button($fs:$base__font-size){
     font-family: $font-family-button-default;
@@ -37,6 +73,12 @@
       //background-color: blue;
         background-color: map-get($drop-down-colors,$n );
     }
+    .nav__item--icon-#{$n}{
+        color: map-get($drop-down-colors,$n );
+    }
+    .nav-item:hover .nav__item--icon-#{$n}{
+        color: white;
+    }
     .nav-item:hover .nav__item--dropdown-#{$n}{
         display: block;
         //background-color: #555;
@@ -57,6 +99,9 @@
         color:black;
     }
     .tab#{$n} .tab-image-circle{
+        background-color: map-get($drop-down-colors,$n);
+    }
+    .tab#{$n} .tab__button{
         background-color: map-get($drop-down-colors,$n);
     }
     .tab#{$n}:hover{
