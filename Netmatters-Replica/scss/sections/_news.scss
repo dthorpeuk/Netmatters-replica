@@ -1,0 +1,123 @@
+//////////////////
+//News Section///
+//////////////////
+.news-container{
+    
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(x-small){
+        display: flex;
+        flex: auto;
+    }
+    @include mq(small){
+        width:750px;
+    }
+    @include mq(medium){
+        width:970px;
+    }
+    @include mq(large){
+        width:1170px;
+    }
+}
+.news-items{
+    
+    
+    
+    @include mq(small){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    @include mq(medium){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    @include mq(large){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+   
+}
+.news-item{
+    position: relative;
+    border: 1px solid #ccc;
+    margin: 40px 0;
+    border-radius: 3px;
+
+    top:0;
+    // @include mq(small-down){
+    //     width: 100%;
+    // }
+    &:hover{
+        top: -10px;
+        transition: .5s ease;
+    }
+
+}
+.news-overflow{
+    display: none;
+    @include reveal(block,large);
+}
+.image-standard img{
+    width: 100%;
+}
+.category{
+    background-color: lighten($dark-lavender,10%);
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.news-content{
+    font-size: 1rem;
+    text-decoration: none;
+}
+.news-content h3{
+    text-decoration: none;
+    color: black;
+}
+.news-content .btn{
+    //background-color: lighten( $dark-lavender,10%);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.cat-1{
+    background-color: lighten( $dark-lavender,10%);
+}
+.cat-2{
+    background-color: $greyish-blue;
+}
+.cat-3{
+    background-color: $orangeish;
+}
+.btn .span{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.news-user{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.image-standard{
+    display:block;
+    width: 100%;
+}
+.image-standard img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.news-content{
+    margin: 25px;
+}
