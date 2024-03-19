@@ -26,7 +26,7 @@
     padding:20px 0 15px 0;
 }
 .nav__item--icon-1::before{
-
+    
     content: "\e957";
 }
 .nav__item--icon-2::before{
@@ -52,6 +52,108 @@
 .nav__item--icon-7::before{
 
     content: "\e904";
+}
+.drop-icon{
+    font-family: 'icomoon' !important;
+    font-size: 2em;
+    color: white;
+}
+.link-icon-container span{
+   // color: white;
+}
+.icon-cogs::before{
+    //color:inherit;
+    content: "\e995";
+}
+.icon-briefcase::before{
+    content: "\e918";
+}
+.icon-crossing-arrows::before{
+    content: "\e995";
+}
+.icon-mobile::before{
+    content: "\e995";
+}
+.icon-folder::before{
+    content: "\e995";
+}
+.icon-people::before{
+    content: "\e995";
+}
+.icon-clouddownload::before{
+    content: "\e995";
+}
+.icon-laptop::before{
+    content: "\e995";
+}
+.icon-cloud::before{
+    content: "\e995";
+}
+.icon-world::before{
+    content: "\e995";
+}
+.icon-headset::before{
+    content: "\e995";
+}
+.icon-motar-board::before{
+    content: "\e995";
+}
+.icon-harddrive::before{
+    content: "\e995";
+}
+.icon-magnifying::before{
+    content: "\e995";
+}
+.icon-money::before{
+    content: "\e995";
+}
+.icon-graphup::before{
+    content: "\e995";
+}
+.icon-email::before{
+    content: "\e995";
+}
+.icon-pencil::before{
+    content: "\e995";
+}
+.icon-ticket::before{
+    content: "\e995";
+}
+.icon-phone-idle::before{
+    content: "\e995";
+}
+.icon-phone-active::before{
+    content: "\e995";
+}
+.icon-phone-in-sq::before{
+    content: "\e995";
+}
+.icon-gauge::before{
+    content: "\e995";
+}
+.icon-hands::before{
+    content: "\e995";
+}
+.icon-papers::before{
+    content: "\e995";
+}
+.icon-clock::before{
+    content: "\e995";
+}
+.icon-science::before{
+    content: "\e995";
+}
+.icon-shield::before{
+    content: "\e995";
+}
+.icon-lock-locked::before{
+    content: "\e995";
+}
+.icon-element::before{
+    content: "\e995";
+}
+.icon-question::before{
+    content: "\e995";
 }
 .nav-item-content{
     display: flex;
@@ -170,7 +272,7 @@ gap: 50px 0px;
 
 }
 .link-icon-container{
-    filter: invert(100%);
+   // filter: invert(100%);
 }
 //First item of the list takes up more space
 .sub-menu-banner-title
