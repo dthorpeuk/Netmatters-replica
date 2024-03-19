@@ -75,6 +75,10 @@
     font-weight: 600;
     margin-top: 10px;
 }
+.read-time{
+    @include standard-text-header(1rem);
+    color: $greyish-blue;
+}
 .news-content{
     font-size: 1rem;
     text-decoration: none;

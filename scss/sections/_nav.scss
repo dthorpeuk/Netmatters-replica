@@ -61,100 +61,7 @@
 .link-icon-container span{
    // color: white;
 }
-.icon-cogs::before{
-    //color:inherit;
-    content: "\e995";
-}
-.icon-briefcase::before{
-    content: "\e918";
-}
-.icon-crossing-arrows::before{
-    content: "\e995";
-}
-.icon-mobile::before{
-    content: "\e995";
-}
-.icon-folder::before{
-    content: "\e995";
-}
-.icon-people::before{
-    content: "\e995";
-}
-.icon-clouddownload::before{
-    content: "\e995";
-}
-.icon-laptop::before{
-    content: "\e995";
-}
-.icon-cloud::before{
-    content: "\e995";
-}
-.icon-world::before{
-    content: "\e995";
-}
-.icon-headset::before{
-    content: "\e995";
-}
-.icon-motar-board::before{
-    content: "\e995";
-}
-.icon-harddrive::before{
-    content: "\e995";
-}
-.icon-magnifying::before{
-    content: "\e995";
-}
-.icon-money::before{
-    content: "\e995";
-}
-.icon-graphup::before{
-    content: "\e995";
-}
-.icon-email::before{
-    content: "\e995";
-}
-.icon-pencil::before{
-    content: "\e995";
-}
-.icon-ticket::before{
-    content: "\e995";
-}
-.icon-phone-idle::before{
-    content: "\e995";
-}
-.icon-phone-active::before{
-    content: "\e995";
-}
-.icon-phone-in-sq::before{
-    content: "\e995";
-}
-.icon-gauge::before{
-    content: "\e995";
-}
-.icon-hands::before{
-    content: "\e995";
-}
-.icon-papers::before{
-    content: "\e995";
-}
-.icon-clock::before{
-    content: "\e995";
-}
-.icon-science::before{
-    content: "\e995";
-}
-.icon-shield::before{
-    content: "\e995";
-}
-.icon-lock-locked::before{
-    content: "\e995";
-}
-.icon-element::before{
-    content: "\e995";
-}
-.icon-question::before{
-    content: "\e995";
-}
+
 .nav-item-content{
     display: flex;
    // flex-grow: 2;
@@ -240,7 +147,8 @@
    flex-direction: row;
    align-content: flex-start;
    justify-content: flex-start;
-   max-width: 70%;
+   align-items: center;
+   //max-width: 70%;
 gap: 50px 0px;
    margin-top: 50px;
   // margin-inline-start: 0;
@@ -253,7 +161,21 @@ gap: 50px 0px;
     
    }
 
+   @include mq(small){
+    width: 970px;
+   }
+   @include mq(large){
+    width: 1200px;
+   }
 
+
+}
+.dropdown-item a{
+    display: flex;
+    align-items: center;
+}
+.dropdown-item:hover .link-text{
+    text-decoration: underline;
 }
 // .nav__item--dropdown > ul{
 //     display:flex;
@@ -268,10 +190,14 @@ gap: 50px 0px;
 
 .link-text{
     @include standard-text-header(1.35rem);
+    margin-left: 10px;
     //width: 33%;
 
 }
 .link-icon-container{
+    // display: flex;
+    // justify-content: left;
+    // align-items: center;
    // filter: invert(100%);
 }
 //First item of the list takes up more space

@@ -54,6 +54,115 @@ $tab-grid-width: 60%;
 
 $font-family-button-default : 'Poppins', 'sans-serif';
 $button-text-default : 'Poppins', 'sans-serif';
+
+//Icons
+.icon-cogs::before{
+  //color:inherit;
+  content: "\e995";
+}
+.icon-briefcase::before{
+  content: "\e918";
+}
+.icon-crossing-arrows::before{
+  content: "\e90f";
+}
+.icon-mobile::before{
+  content: "\e958";
+}
+.icon-folder::before{
+  content: "\e917";
+}
+.icon-people::before{
+  content: "\e90d";
+}
+.icon-clouddownload::before{
+  content: "\eaaf";
+}
+.icon-laptop::before{
+  content: "\e957";
+}
+.icon-cloud::before{
+  content: "\e9c1";
+}
+.icon-world::before{
+  content: "\e90b";
+}
+.icon-headset::before{
+  content: "\e910";
+}
+.icon-mortar-board::before{
+  content: "\e904";
+}
+.icon-harddrive::before{
+  content: "\e90a";
+}
+.icon-magnifying::before{
+  content: "\e986";
+}
+.icon-money::before{
+  content: "\e916";
+}
+.icon-graphup::before{
+  content: "\e915";
+}
+.icon-mail::before{
+  content: "\e90e";
+}
+.icon-pencil::before{
+  content: "\e914";
+}
+.icon-ticket::before{
+  content: "\e909";
+}
+.icon-phone-idle::before{
+  content: "\e942";
+}
+.icon-phone-active::before{
+  content: "\e901";
+}
+.icon-phone-in-sq::before{
+  content: "\e913";
+}
+.icon-gauge::before{
+  content: "\e9a6";
+}
+.icon-hands::before{
+  content: "\e912";
+}
+.icon-papers::before{
+  content: "\e925";
+}
+.icon-clock::before{
+  content: "\e94e";
+}
+.icon-science::before{
+  content: "\e90c";
+}
+.icon-shield::before{
+  content: "\e906";
+}
+.icon-lock-locked::before{
+  content: "\e98f";
+}
+.icon-element::before{
+  content: "\ea80";
+}
+.icon-question::before{
+  content: "\e919";
+}
+.icon-downloadhd::before{
+  content: "\e9c7";
+}
+.icon-trolley::before{
+  content: "\e93a";
+}
+.icon-display::before{
+  content: "\e956";
+}
+.icon-megaphone::before{
+  content: "\e911";
+}
+
 //Color Constants
 
 $marble-blue: #526781;
