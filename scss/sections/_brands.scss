@@ -91,13 +91,16 @@
  
  }
  .brandbtn{
-     background-color:  #121318;
+     background-color:  #272936;
  }
  .googlebtn{
      background-color: #166af4;
  }
  .trustbtn{
      background-color: #009b69;
+ }
+ .brandbtn:hover{
+background-color:#121318;
  }
  .brand-arrow{
      filter: invert(100%);
@@ -116,4 +119,10 @@
      color: orange;
      font-size: 3em;
      content: "\e9d9";
+ }
+ .client-quote-author span{
+    color: #a3a8ac;
+ }
+ .client-quote-author a:hover{
+    text-decoration: underline;
  }

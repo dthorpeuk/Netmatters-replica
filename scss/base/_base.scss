@@ -61,15 +61,15 @@ header{
 }
 .manage-consent{
     position: fixed;
-    left: 1%;
-    bottom: 1%;
+    left: 0;
+    bottom:0;
     z-index: 3;
     border-style: none;
 }
 .manage-consent button{
     border-style: none;
     background-color: $greyish-blue;
-    border-radius: 3px;
+    border-radius: 5px;
     color: white;
 
 }
@@ -78,8 +78,27 @@ header{
 }
 //Main styles
 
-
-
+.arrow-link{
+    //float: right;
+    //display: inline;
+    font-size:1.6em;
+    //display: flex;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.arrow-link-l{
+    display: none;
+    float: right;
+   @include reveal(flex,small-up);
+}
+.arrow-link-s{
+    display: none;
+    justify-content: center;
+   @include reveal(flex,x-small);
+}
 .btn{
     @include standard-text-button(1.125rem);
 
@@ -137,7 +156,13 @@ header{
 
 }
 
-
+.text-input{
+    &:focus{
+        border-color: #5bc0de;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192, 222,.6);
+    }
+}
 
 .nav{
     display: none;

@@ -167,6 +167,9 @@
     color: white;
     width: 100%;
 }
+.f-list-item:hover a{
+    text-decoration: underline;
+}
 .licence{
     display: flex;
 }
@@ -180,8 +183,8 @@
     flex-direction: row;
 }
 .footer-bottom-content{
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+   // margin-right: auto;
    // width: 1170px;
     background-color: #212330;
     color: white;
@@ -195,4 +198,7 @@
     @include mq(large){
         width: 1170px;
     }
+}
+.footb-list li:hover{
+    text-decoration: underline;
 }

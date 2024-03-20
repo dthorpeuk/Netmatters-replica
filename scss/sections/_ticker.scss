@@ -1,0 +1,93 @@
+
+.ticker{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow-x: clip;
+    
+    // display: flex;
+    // flex-direction: column;
+}
+.ticker1{
+    //width: 100%;
+}
+.ticker-inner{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    // display: inline;
+    width: 100%;
+    max-width: 250px;
+   // overflow-x: hidden;
+}
+.ticker-item{
+    margin-right: 50px;
+    //width: 200px;
+    filter: grayscale(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ticker-item:hover{
+    filter: grayscale(0%);
+    
+}
+.ticker-item:hover .ticker-tooltip{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ticker-tooltip{
+    position: absolute;
+   
+    bottom: 150%;
+    z-index: 3;
+    width: 300px;
+    //height: 100px;
+    background-color: #333645;
+    display: none;
+    //align-content: center;
+}
+
+.ticker-box{
+    //color: white;
+    display: flex;
+    flex-direction: column;
+}
+.ticker-box h3{
+    color: white;
+    text-align: center;
+    z-index: 4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ticker-box p{
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+   // z-index: 4;
+}
+.ticker-box a{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: none;
+    align-items: center;
+}
+.ticker-triangle{
+    width: 0;
+	height: 0;
+	border-left: width-for-triangle(72px) solid transparent;
+	border-right: width-for-triangle(72px) solid transparent;
+	border-top: 40px solid;// #7489a3;
+    z-index: 2;
+    position: absolute;
+    border-top-color: #333645;
+    display:block;
+    left: 114px;
+    bottom: -40px;
+}
+.has-case-study a{
+    display: flex;
+}
