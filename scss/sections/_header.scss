@@ -74,6 +74,8 @@
     border-right: none;
     line-height: 1.4;
     display: none;
+    //padding: 1em;
+    padding-left: 1em;
     @include reveal(block,small);
     @include reveal(block,large);
 

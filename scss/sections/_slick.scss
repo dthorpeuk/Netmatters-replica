@@ -3,9 +3,16 @@
 /////////////////
 .slick-container{
     width: 100%;
-    //height: 500px;;
+    background-image: url("../images/home-YLei.webp");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 680px;
+    //right:0;
 }
-.slick-container img{
-    max-width: 100%;
-    width: 100%;
+// .slick-container img{
+//     max-width: 100%;
+//     width: 100%;
+// }
+.slick-text{
+    width: 50%;
 }
