@@ -1,11 +1,32 @@
-.nav .container>ul{
+// .nav .container>ul{
+//     padding: 0;
+//     margin: 0;
+//     margin-block-start: 0;
+//     margin-block-end: 0;
+//     padding-inline-start: 0;
+//     list-style: none;
+//     display: flex;
+//     flex-direction: row;
+//     //height: 150px;
+//     justify-content: center;
+//     text-decoration: none;
+
+//     height: 1%;
+// }
+.nav ul{
     padding: 0;
     margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    height: 100%;
+    //height: 150px;
     justify-content: center;
+    text-decoration: none;
+    
+   // height: 1%;
 }
 .nav-item{
     //display:inline-block ;
@@ -58,9 +79,7 @@
     font-size: 2em;
     color: white;
 }
-.link-icon-container span{
-   // color: white;
-}
+
 
 .nav-item-content{
     display: flex;
@@ -70,6 +89,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    height: 100%;
    // gap: 0;// get-diff($nav-height,);
 }
 .nav-item .nav-text{

@@ -2,17 +2,70 @@
 //Slick section//
 /////////////////
 .slick-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
     width: 100%;
     background-image: url("../images/home-YLei.webp");
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     height: 680px;
+    float: top;
+    overflow-x: hidden;
     //right:0;
 }
-// .slick-container img{
-//     max-width: 100%;
-//     width: 100%;
-// }
+.slick-content{
+    padding: 3.75rem 0;
+
+}
+.content-container{
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include mq(small){
+        width: 750px;
+    }
+    @include mq(medium){
+        width: 970px;
+    }
+    @include mq(large){
+        width: 1200px;
+    }
+}
 .slick-text{
-    width: 50%;
+    overflow-x: hidden;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: white;
+    
+    
+}
+.slick-text h1{
+    overflow-x: hidden;
+    font-size: 2rem;
+    @include mq(small-up){
+        font-size: 3rem;
+    }
+    @include mq(medium){
+        
+    }
+    @include mq(large){
+        
+    }
+}
+.slick-btn-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    //justify-content: center;
+}
+.slick-btn-container .btn{
+    display: flex;
+    align-items: center;
+    background-color: #926fb1;
 }

@@ -172,6 +172,10 @@
 }
 .licence{
     display: flex;
+    @include mq(small-up){
+        margin-left: 180px;
+    }
+    
 }
 .licence ul{
     margin-top: 0;

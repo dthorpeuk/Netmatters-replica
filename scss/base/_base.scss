@@ -104,7 +104,7 @@ header{
 
     display: inline-block;
    // padding: 15px 30px;
-   padding: 5px 15px;
+   padding: 15px 15px;
     border: 0px;
 
    text-decoration: none;
@@ -115,7 +115,8 @@ header{
     background-color:  #999aa2;
 
     width: auto;
-    height: 56px;
+    //height: 56px;
+    height: auto;
     box-sizing: border-box;
     min-height: 32px;
 
@@ -225,7 +226,19 @@ padding: 0 15px;
 
 }
 
-
+.testcontainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.testcontainer ul{
+    display: flex;
+    flex-direction: row;
+}
+.spacer{
+    height: 100px;
+    width: 100%;
+}
 
 
 
