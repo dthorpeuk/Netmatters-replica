@@ -62,6 +62,10 @@
     @include reveal(block,large);
     @include reveal(block,x-small);
 }
+
+.image-standard img{
+    width: 100%;
+}
 .article-link{
     position: absolute;
     top: 0;
@@ -69,9 +73,6 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-}
-.image-standard img{
-    width: 100%;
 }
 .category{
     background-color: lighten($dark-lavender,10%);
