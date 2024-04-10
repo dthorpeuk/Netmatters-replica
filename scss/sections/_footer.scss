@@ -16,14 +16,14 @@ footer
 .footer-content{
     display: flex;
     justify-content: space-between;
-    //flex-wrap: wrap;
+   // flex-wrap: wrap;
     flex-direction: row;
 
     margin-left: auto;
     margin-right: auto;
     
-    padding-left: 15px;
-    padding-right: 15px;
+    //padding-left: 15px;
+    //padding-right: 15px;
     flex-direction: column;
     @include mq(x-small){
         flex: auto;
@@ -33,11 +33,16 @@ footer
     }
     @include mq(medium){
         width: 970px;
+        flex-wrap: wrap;
     }
     @include mq(large){
         width: 1170px;
         flex-direction: row;
     }
+}
+.footer-content h4{
+    text-transform: uppercase;
+    font-weight: 400;
 }
 .footer-logo{
 

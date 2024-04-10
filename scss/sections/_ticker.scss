@@ -51,6 +51,12 @@
   //  bottom: 50px;
     //align-content: center;
 }
+.ticker-tooltip p{
+    padding-bottom: 20px;
+}
+.ticker-item img{
+    max-height: 70px;
+}
 //Used to make a larger hoverable area for the tooltip
 .ticker-tooltip-container{
 
