@@ -9,53 +9,74 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    background-image: url("../images/home-YLei.webp");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(40, 40, 40, 0.4)), url("../images/home-YLei.webp");
+    
     background-size:cover;
     background-repeat: no-repeat;
-    height: 680px;
+    height: 550px;
     float: top;
     overflow-x: hidden;
+    overflow-y: hidden;
     //right:0;
 }
 .slick-content{
     padding: 3.75rem 0;
 
 }
-.content-container{
-    margin-left: auto;
-    margin-right: auto;
+// .content-container{
+//     margin-left: auto;
+//     margin-right: auto;
     
-    @include mq(small){
-        width: 750px;
-    }
-    @include mq(medium){
-        width: 970px;
-    }
-    @include mq(large){
-        width: 1200px;
-    }
-}
+//     @include mq(small){
+//         width: 750px;
+//     }
+//     @include mq(medium){
+//         width: 970px;
+//     }
+//     @include mq(large){
+//         width: 1200px;
+//     }
+// }
 .slick-text{
     overflow-x: hidden;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    //width: 70%;
     color: white;
-    
+    align-items: center;
+    text-align: center;
+    @include mq(medium-up){
+        align-items:flex-start;
+        text-align: left;
+    }
     
 }
 .slick-text h1{
     overflow-x: hidden;
+    overflow-y: hidden;
     font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 600;
     @include mq(small-up){
-        font-size: 3rem;
-    }
-    @include mq(medium){
         
+    }
+    @include mq(medium-up){
+        font-size: 4rem;
+        line-height: 5rem;
     }
     @include mq(large){
         
+    }
+}
+.slick-text p{
+    font-size: 1.25rem;
+    margin-bottom: .375rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    @include mq(medium-up){
+        font-size: 1.625rem;
+        line-height: 2.5rem;
     }
 }
 .slick-btn-container{
@@ -67,5 +88,12 @@
 .slick-btn-container .btn{
     display: flex;
     align-items: center;
-    background-color: #926fb1;
+    //background-color: #926fb1;
+    @include standard-text-button(#926fb1,#7e57a0);
+    margin-top: 1.938rem;
+   // margin-bottom: 1.125rem;
+   margin-bottom: 2.125rem;
+    line-height: 50px;
+    padding: 5px 20px;
+    font-size: 1.25rem;
 }

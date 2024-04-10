@@ -6,6 +6,9 @@
     color: white;
     //width: 100%;
  }
+ .brand__col a:not(.btn):hover{
+    text-decoration: underline
+}
  .brand-container{
      padding-top: 50px;
      padding-bottom: 50px;
@@ -61,11 +64,15 @@
      font-weight: 600;
      font-size: 1rem;
      font-style: italic;
+     margin: 0 0 10px;
+     margin-bottom: 25px;
  }
  .brand__col2 p{
      font-weight: 600;
      font-size: 1.3rem;
      font-style: italic;
+     margin: 0 0 10px;
+     margin-bottom: 25px;
  }
  .brand__col2__stars{
     display: flex;
@@ -88,7 +95,8 @@
  .brand__col__buttons .btn{
      display: flex;
      align-items: center;
-     flex-wrap: wrap;
+     
+   //  flex-wrap: wrap;
      @include mq(medium-down){
          margin-right: auto;
      }
@@ -96,13 +104,29 @@
  
  }
  .brandbtn{
-     background-color:  #272936;
+    // background-color:  #272936;
+     @include standard-text-button(#272936,#121318);
+     font-size: 20px;
+     padding: 10px 30px;
+     border-radius: 6px;
  }
  .googlebtn{
-     background-color: #166af4;
+    
+     @include standard-text-button(#4387f6,#166af4);
+     font-size: 20px;
+     padding: 10px 30px;
+     border-radius: 6px;
+     flex-wrap: nowrap;
+     margin-top: 25px;
  }
  .trustbtn{
-     background-color: #009b69;
+    
+     @include standard-text-button(#00b67b,#009b69);
+     font-size: 20px;
+     padding: 10px 30px;
+     border-radius: 6px;
+     flex-wrap: nowrap;
+     margin-top: 25px;
  }
  .brandbtn:hover{
 background-color:#121318;
@@ -113,11 +137,14 @@ background-color:#121318;
  .icon-arrow::before{
      font-family: 'icomoon' !important;
      color: inherit;
-     content: "\ea3c"
+     content: "\ea3c";
  
  }
  .icon-arrow{
  
+ }
+ .icon-star{
+    margin-bottom: 25px;
  }
  .icon-star::before{
      font-family: 'icomoon' !important;

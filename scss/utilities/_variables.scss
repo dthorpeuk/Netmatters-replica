@@ -51,8 +51,9 @@ $tab-grid-width: 60%;
     font-display: block;
   }
 //Font Stacks
-
+$font-family-body-default: "Lato",Helvetica,Arial,sans-serif;
 $font-family-button-default : 'Poppins', 'sans-serif';
+
 $button-text-default : 'Poppins', 'sans-serif';
 
 //Icons
@@ -193,7 +194,7 @@ $drop-down-colors:(
 
 // Breakpoints
 
-$brkpoint-xsm    : 1px; $brkpoint-sm-up:768px;
-$brkpoint-sm    : 769px; $brkpoint-md-up:992px;
-$brkpoint-md    : 993px; $brkpoint-bg-up:1200px;
-$brkpoint-lg    : 1201px;
+$brkpoint-xsm    : 1px; $brkpoint-sm-one:767px;
+$brkpoint-sm    : 768px; $brkpoint-md-one:991px;
+$brkpoint-md    : 992px; $brkpoint-lg-one:1199px;
+$brkpoint-lg    : 1200px;

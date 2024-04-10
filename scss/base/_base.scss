@@ -8,11 +8,16 @@ html{
 body{
     background-color: #fff;
     @include standard-text-header(1rem);
+    //font-family:  $font-family-body-default;
+   // font-size: 14px;
     color: black;
     letter-spacing: 0.4px;
 }
+
 h1,.h1{
     @include standard-text-header(4.251rem);
+    margin: 0;
+    margin-bottom: 20px;
     
 }
 h2,.h2{
@@ -28,6 +33,8 @@ p,.p{
     text-decoration: none;
     text-wrap: wrap;
     color: inherit;
+    margin: 0;
+    //margin-bottom: ;
 }
 a{
     text-decoration: none;
@@ -69,68 +76,55 @@ header{
 .manage-consent button{
     border-style: none;
     background-color: $greyish-blue;
-    border-radius: 5px;
+    border-radius:0;
     color: white;
-
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: solid #75788a;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
 }
 .reveal{
     display: block;
 }
 //Main styles
 
-.arrow-link{
-    //float: right;
-    //display: inline;
-    font-size:1.6em;
-    //display: flex;
-    text-decoration: none;
-    color: black;
-    &:hover{
-        text-decoration: underline;
-    }
-}
-.arrow-link-l{
-    display: none;
-    float: right;
-   @include reveal(flex,small-up);
-}
-.arrow-link-s{
-    display: none;
-    justify-content: center;
-   @include reveal(flex,x-small);
-}
+
 .btn{
-    @include standard-text-button(1.125rem);
 
-    display: inline-block;
-   // padding: 15px 30px;
-   padding: 15px 15px;
-    border: 0px;
+@include standard-text-button();
 
-   text-decoration: none;
+//     display: inline-block;
+//    // padding: 15px 30px;
+//    padding: 15px 15px;
+//     border: 0px;
 
-    border-radius : 3px;
+//    text-decoration: none;
 
-    display: inline-block;
-    background-color:  #999aa2;
+//     border-radius : 3px;
 
-    width: auto;
-    //height: 56px;
-    height: auto;
-    box-sizing: border-box;
-    min-height: 32px;
+//     display: inline-block;
+//     background-color:  #999aa2;
 
-    &:hover  {
+//     width: auto;
+//     //height: 56px;
+//     height: auto;
+//     box-sizing: border-box;
+//     min-height: 32px;
+//     cursor: pointer;
+//     &:hover  {
       
-       opacity: .75;
+       
+//        //opacity: .75;
 
-    }
+//     }
 
 
 }
 //Button without hover effect
 .btn-n{
-    @include standard-text-button(1.125rem);
+   // @include standard-text-button(1.125rem);
 
     display: inline-block;
     display: flex;
@@ -151,7 +145,7 @@ header{
     height: 56px;
     box-sizing: border-box;
     min-height: 32px;
-
+    cursor: pointer;
 
 
 
@@ -165,18 +159,7 @@ header{
     }
 }
 
-.nav{
-    display: none;
-  background-color: #333645;
-  //height: $nav-height;
-  width:100%;
-  margin-bottom: 0;
-  padding: 0;
-  line-height: 1;
-  @include reveal(block,large);
-//   margin-left: -10px;
-//   margin-right: -10px;
-}
+
 // .reveal-medium-block{
 //     @include mq(medium){
 //        @include reveal();
@@ -223,7 +206,15 @@ small{
     margin-left: auto;
 margin-right: auto;
 padding: 0 15px;
-
+@include mq(small){
+width: 750px;
+}
+@include mq(medium){
+    width: 970px; 
+}
+@include mq(large){
+    width: 1200px;
+}
 }
 
 .testcontainer{

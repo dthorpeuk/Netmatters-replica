@@ -1,12 +1,12 @@
 //Media Queries
 @mixin mq($s){
     @if $s == "x-small"{
-        @media (max-width: $brkpoint-sm){
+        @media (max-width:  $brkpoint-sm-one ){
             @content;
         }
     }
     @else if $s == "small"{
-        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md){
+        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md-one){
             @content;
         }
     }
@@ -16,12 +16,12 @@
         }
     }
     @else if $s == "small-down"{
-        @media (max-width: $brkpoint-md){
+        @media (max-width: $brkpoint-md-one){
             @content;
         }
     }
     @else if $s == "medium"{
-        @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg){
+        @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg-one){
             @content;
         }
     }
@@ -52,11 +52,53 @@
     }
 
 }
-@mixin standard-text-button($fs:$base__font-size){
-    font-family: $font-family-button-default;
-    color:white;
-    font-size: $fs;
+// @mixin standard-text-button($fs:$base__font-size){
+//     font-family: $font-family-button-default;
+//     color:white;
+//     font-size: $fs;
+//     text-transform: uppercase;
+// }
+@mixin standard-text-button($bgc:black,$hov:grey){
+    display: inline-block;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
     text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 5px 15px;
+    font-size: 1rem;
+    line-height: 35px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+   // padding: 15px 15px;
+   // border: 0px;
+
+   text-decoration: none;
+
+    //border-radius : 3px;
+
+    display: inline-block;
+    background-color:  #999aa2;
+
+    width: auto;
+    //height: 56px;
+    height: auto;
+    box-sizing: border-box;
+    min-height: 32px;
+   
+
+    background-color: $bgc;
+    &:hover{
+        background-color: $hov;
+    }
 }
 @mixin standard-text-header($fs:$base__font-size){
     font-family: $font-family-button-default;

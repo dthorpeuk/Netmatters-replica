@@ -22,19 +22,25 @@
 }
 .services-header{
     position: relative;
+    display: flex;
+    height:49.52px;
+    justify-content: space-between;
+    align-items: center;
     //width: $tab-grid-width;
-    margin: auto;
+   // margin: auto;
     //display: flex;
    // flex-direction: row;
    //display: inline;
-
+    margin-bottom: 25px;
 }
 .services-header h2{
    // float: left;
    display: inline;
-
+    font-size: 2.7rem;
+    font-weight: 600;
 
 }
+
 // .services-header a{
 //     float: right;
 //     //display: inline;
@@ -46,7 +52,29 @@
 //         text-decoration: underline;
 //     }
 // }
-
+.arrow-link{
+    //float: right;
+    //display: inline;
+    font-size:1.6em;
+    //display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.arrow-link-l{
+    display: none;
+    float: right;
+   @include reveal(flex,small-up);
+}
+.arrow-link-s{
+    display: none;
+    justify-content: center;
+   @include reveal(flex,x-small);
+}
 .tabs-container{
    // width: $tab-grid-width;
     margin: auto;
@@ -119,6 +147,11 @@
 
 .tab-header{
     color:black;
+    
+        font-size: 1.3rem;
+        padding-bottom: 10px;
+        margin: 0 0 11px;
+    
 }
 .tab h3{
     font-size: 1.3em;
@@ -246,5 +279,7 @@
 .tabs-container .block {
 
 text-decoration: none;
+//padding: 30px;
+
 
 }

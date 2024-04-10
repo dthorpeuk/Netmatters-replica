@@ -50,6 +50,7 @@
     // @include mq(small-down){
     //     width: 100%;
     // }
+    cursor: pointer;
     &:hover{
         top: -10px;
         transition: .5s ease;
@@ -59,6 +60,7 @@
 .news-overflow{
     display: none;
     @include reveal(block,large);
+    @include reveal(block,x-small);
 }
 .image-standard img{
     width: 100%;
@@ -86,12 +88,44 @@
 .news-content h3{
     text-decoration: none;
     color: black;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.news-content p{
+    margin-bottom: 25px;
 }
 .news-content .btn{
     //background-color: lighten( $dark-lavender,10%);
-    display: flex;
+   // display: flex;
     align-items: center;
     width: fit-content;
+    font-size: 1rem;
+    display: inline-block;
+    
+}
+.news-content .btn-cat-1{
+    @include standard-text-button(#926fb1,#926fb1);
+    font-size: 1rem;
+    line-height: 35px;
+   // padding-top: 5px;
+  //  padding-bottom: 5px;
+  
+}
+.news-content .btn-cat-2{
+    @include standard-text-button(#67809f,#67809f);
+    font-size: 1rem;
+    line-height: 35px;
+   // padding-top: 5px;
+  //  padding-bottom: 5px;
+  
+}
+.news-content .btn-cat-3{
+    @include standard-text-button(#d64541,#d64541);
+    font-size: 1rem;
+    line-height: 35px;
+   // padding-top: 5px;
+  //  padding-bottom: 5px;
+  
 }
 .cat-1{
     background-color: lighten( $dark-lavender,10%);
