@@ -31,7 +31,7 @@
         }
     }
     @else if $s == "medium-down"{
-        @media (max-width: $brkpoint-lg){
+        @media (max-width: $brkpoint-lg-one){
             @content;
         }
     }

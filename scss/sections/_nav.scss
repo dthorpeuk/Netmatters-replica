@@ -50,6 +50,9 @@
     //margin-left: 20px;
     background-color: inherit;
     cursor: pointer;
+    @include mq(medium-down){
+        width:$nav-item-width-m;
+    }
 }
 .nav-item::after{
 
