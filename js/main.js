@@ -3,7 +3,7 @@ dots:true,
 autoplay: true,
 autoplaySpeed: 2000,
 arrows: false,
-draggable:false,
+draggable:true,
 pauseOnHover:true,
 pauseOnDotsHover:true
 

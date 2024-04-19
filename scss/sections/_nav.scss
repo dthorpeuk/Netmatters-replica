@@ -42,8 +42,7 @@
    // height: 1%;
 }
 .nav-item{
-    //display:inline-block ;
-    //display: flex;
+ 
     width:$nav-item-width;
     height: 100%;
     padding: 0;
@@ -117,7 +116,7 @@
     justify-content: center;
     text-align: center;
     height: 100%;
-  
+    width: 100%;
 }
 .nav-item .nav-text{
    // margin-bottom: 20px;
@@ -132,6 +131,10 @@
     z-index: 2;
     position: absolute;
     display:none;
+    @include mq(medium-down){
+        border-left: width-for-triangle($nav-item-width-m) solid transparent;
+        border-right: width-for-triangle($nav-item-width-m) solid transparent;
+    }
 }
 .triangle-down::after{
     width: 0;
@@ -142,6 +145,10 @@
     z-index: 2;
     position: absolute;
     display:none;
+    @include mq(medium-down){
+        border-left: width-for-triangle($nav-item-width-m) solid transparent;
+        border-right: width-for-triangle($nav-item-width-m) solid transparent;
+    }
 }
 .nav__item--dropdown{
     position: absolute;
