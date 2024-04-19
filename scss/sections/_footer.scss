@@ -43,6 +43,7 @@ footer
 .footer-content h4{
     text-transform: uppercase;
     font-weight: 400;
+    color: white;
 }
 .footer-logo{
 
@@ -182,38 +183,57 @@ footer
     text-decoration: underline;
 }
 .licence{
+    // display: flex;
+    // @include mq(small-up){
+    //     margin-left: 180px;
+    // }
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
     display: flex;
-    @include mq(small-up){
-        margin-left: 180px;
-    }
-    
+    padding: 5px 0 10px;
+    width: 100%;
+    line-height: 1.42857143;
 }
 .licence ul{
     margin-top: 0;
     margin-bottom: 0;
 }
 .footer-bottom{
-    background-color: #212330;
+    // background-color: #212330;
+    // display: flex;
+    // flex-direction: row;
+
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    font-size: .8125rem;
+    padding-top: 10px;
+    width: 100%;
+    left: 0;
+    background: #212330;
+    border: 0;
 }
 .footer-bottom-content{
-    //margin-left: auto;
-   // margin-right: auto;
-   // width: 1170px;
-    background-color: #212330;
-    color: white;
+  
+    // background-color: #212330;
+    // color: white;
 
-    @include mq(small-down){
-        width:100%;
-    }
-    @include mq(medium){
-        width: 970px;
-    }
-    @include mq(large){
-        width: 1170px;
-    }
+    // @include mq(small-down){
+    //     width:100%;
+    // }
+    // @include mq(medium){
+    //     width: 970px;
+    // }
+    // @include mq(large){
+    //     width: 1170px;
+    // }
 }
 .footb-list li:hover{
     text-decoration: underline;
+}
+.visible-xs {
+    display: none !important;
+    @include mq(small-down){
+        display: block;
+    }
 }

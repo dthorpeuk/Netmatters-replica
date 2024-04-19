@@ -15,17 +15,29 @@ body{
 }
 
 h1,.h1{
-    @include standard-text-header(4.251rem);
-    margin: 0;
-    margin-bottom: 20px;
+    @include standard-text-header(2.25rem);
+    font-weight: 400;
+    margin: 0 0 28px;
+    color: #333645;
     
 }
 h2,.h2{
     @include standard-text-header(2rem);
     //color:#333645;
 }
+.h2,.h3,.h4,h2,h3,h4 {
+    font-weight: 400;
+    margin: 0 0 15px;
+    color: #333645;
+}
+.h3,.h4,h3,h4 {
+    font-size: 1.25rem;
+}
 h3,.h3{
-    @include standard-text-header(1.5rem);
+    @include standard-text-header(1.625rem);
+}
+.h4,h4 {
+    font-size: 1rem
 }
 p,.p{
     @include standard-text-header(1rem);
@@ -34,11 +46,18 @@ p,.p{
     text-wrap: wrap;
     color: inherit;
     margin: 0;
-    //margin-bottom: ;
+    line-height: 1.875rem;
+    margin-bottom:25px ;
 }
 a{
     text-decoration: none;
     color: inherit;
+}
+label{
+    font-weight: 600;
+    color: #333645;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 header{
    // display:;
@@ -52,6 +71,7 @@ header{
     border-style: none;
     //height: 30px;
     //width: 30px;
+    cursor: pointer;
 }
 .message .mdiv{
     border-style: none;
@@ -75,28 +95,60 @@ header{
     bottom:0;
     z-index: 3;
     border-style: none;
+
 }
 .manage-consent button{
     border-style: none;
-    background-color: $greyish-blue;
+    background-color: #75788a;
+    line-height: 22px;
     border-radius:0;
     color: white;
     font-weight: 600;
+    text-transform: capitalize;
     font-size: 0.8rem;
     border: solid #75788a;
     border-width: 1px 1px 0 0;
     border-radius: 0;
     border-top-right-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
 }
 .reveal{
     display: block;
+}
+.is-sticky{
+    background-color: #333645;
 }
 //Main styles
 
 
 .btn{
 
-@include standard-text-button();
+    display: inline-block;
+    color: white;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 5px 15px;
+    font-size: 1rem;
+    line-height: 35px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    width: auto;
+    //height: 56px;
+    height: auto;
+    box-sizing: border-box;
+    min-height: 32px;
+   
 
 //     display: inline-block;
 //    // padding: 15px 30px;
@@ -153,7 +205,13 @@ header{
 
 
 }
+.btn-l{
+    height: auto;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    line-height: 50px;
 
+}
 .text-input{
     &:focus{
         border-color: #5bc0de;
@@ -214,6 +272,9 @@ width: 750px;
 }
 @include mq(medium){
     width: 970px; 
+}
+@include mq(x-medium){
+    width: 1200px; 
 }
 @include mq(large){
     width: 1200px;

@@ -20,6 +20,9 @@
     }
     //margin-right: 272px;
 }
+.news-header{
+    padding-top: 50px;
+}
 .services-header{
     position: relative;
     display: flex;
@@ -32,6 +35,7 @@
    // flex-direction: row;
    //display: inline;
     margin-bottom: 25px;
+
 }
 .services-header h2{
    // float: left;
@@ -56,6 +60,7 @@
     //float: right;
     //display: inline;
     font-size:1.6em;
+    font-weight: 600;
     //display: flex;
     margin-top: auto;
     margin-bottom: auto;
@@ -137,6 +142,7 @@
     // border-radius: 15px;
     // position: relative;
     // padding: 15px;
+    display: block;
     border: 1px solid #ccc;
     border-radius: 15px;
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
@@ -154,15 +160,25 @@
     
 }
 .tab h3{
-    font-size: 1.3em;
+   // font-size: 1.3em;
     font-weight: 400;
     margin-top: 10px;
+
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
 }
-.tabs-container p{
-    font-size: 0.8em;
-    padding-bottom: 110px;
-    margin: 10px 30px;
-    color:#333645;
+.tabs-container p,.tabs-container .p{
+    //font-size: 0.8em;
+  
+   // margin: 10px 30px;
+   // color:#333645;
+
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-bottom: 13px;
+    font-weight: 400;
 }
 .tab1{
 
@@ -170,34 +186,37 @@
 @for $i from 1 to 8{
     @include tab-generic($i);
 }
-
+.tab_button_container{
+    display: block;
+    //bottom: 30px;
+}
 .tab .btn{
 
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 18px;
-    padding: 15px;
+   // display: inline-block;
+   // position: absolute;
+    //left: 50%;
+  //  transform: translateX(-50%);
+    //bottom: 18px;
+   // padding: 15px;
     border:none;
     border-radius: 3px;
-    //color: #fff;
-    margin: 30px 0 10px 0;
+    
+   // margin: 30px 0 10px 0;
 }
 .tab .tab__button{
-    font-family: $button-text-default;
-    display: inline-block;
-    text-transform: uppercase;
-    color: white;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+   // font-family: $button-text-default;
+   // display: inline-block;
+   // text-transform: uppercase;
+    //color: white;
+    //position: absolute;
+   // left: 50%;
+  //  transform: translateX(-50%);
     bottom: 18px;
-    padding: 15px;
+   // padding: 15px;
     border:none;
     border-radius: 3px;
-    //color: #fff;
-    margin: 30px 0 10px 0;
+    
+   // margin: 30px 0 10px 0;
 }
 .tab-image-circle{
     display: flex;
@@ -208,8 +227,7 @@
     align-content: center;
     justify-content: center;
     //background-color: $tab-icon-color-1;
-    margin: auto;
-    margin-top: 25px;
+    margin: 0 auto 17px;
     //padding: 15px;
     align-items: center;
     color: white;
@@ -243,7 +261,7 @@
     font-family: 'icomoon' !important;
     color:inherit;
 
-    content: "\e942";
+    content: "\e901";
 }
 .tab__icon-5::before{
     font-family: 'icomoon' !important;
@@ -278,8 +296,18 @@
 // }
 .tabs-container .block {
 
-text-decoration: none;
-//padding: 30px;
+    text-decoration: none;
+   // margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+    display: block;
 
-
+}
+.tabs-container .block >*{
+   display: block;
+   position: relative;
 }

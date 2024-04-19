@@ -21,6 +21,7 @@
   margin-bottom: 0;
   padding: 0;
   line-height: 1;
+  z-index: 5;//position: relative;
   @include reveal(block,medium-up);
 //   margin-left: -10px;
 //   margin-right: -10px;
@@ -81,7 +82,7 @@
 }
 .nav__item--icon-4::before{
 
-    content: "\e942";
+    content: "\e901";
 }
 .nav__item--icon-5::before{
 
@@ -249,6 +250,7 @@ gap: 50px 0px;
 //First item of the list takes up more space
 .sub-menu-banner-title
 {
+    color:white;
     width:100%
     //display: list-item;
 }

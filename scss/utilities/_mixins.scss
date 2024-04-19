@@ -21,7 +21,7 @@
         }
     }
     @else if $s == "medium"{
-        @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg-one){
+        @media (min-width: $brkpoint-md) and (max-width: $brkpoint-xmd-one){
             @content;
         }
     }
@@ -31,7 +31,12 @@
         }
     }
     @else if $s == "medium-down"{
-        @media (max-width: $brkpoint-lg-one){
+        @media (max-width: $brkpoint-xmd-one){
+            @content;
+        }
+    }
+    @else if $s == "x-medium"{
+        @media (min-width: $brkpoint-xmd) and (max-width: $brkpoint-xmd-one){
             @content;
         }
     }
@@ -59,45 +64,13 @@
 //     text-transform: uppercase;
 // }
 @mixin standard-text-button($bgc:black,$hov:grey){
-    display: inline-block;
-    color: white;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 5px 15px;
-    font-size: 1rem;
-    line-height: 35px;
-    border-radius: 3px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
 
-   // padding: 15px 15px;
-   // border: 0px;
-
-   text-decoration: none;
-
-    //border-radius : 3px;
-
-    display: inline-block;
-    background-color:  #999aa2;
-
-    width: auto;
-    //height: 56px;
-    height: auto;
-    box-sizing: border-box;
-    min-height: 32px;
-   
 
     background-color: $bgc;
+    border-color: $bgc;
     &:hover{
         background-color: $hov;
+        border-color: $hov;
     }
 }
 @mixin standard-text-header($fs:$base__font-size){

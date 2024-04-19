@@ -12,8 +12,8 @@
  .brand-container{
      padding-top: 50px;
      padding-bottom: 50px;
-     padding-left:0;
-     padding-right: 0;
+     padding-left:15px;
+     padding-right: 15px;
      margin-left: auto;
      margin-right: auto;
      display: flex;
@@ -45,7 +45,26 @@
  }
      
  }
+ .brand__row{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    @include mq(x-small){
+        //display: flex;
+        //flex: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    @include mq(small-down){
+      //  width: 750px;
+        // display: flex;
+        // flex: auto;
+       // width: 100%;
+        flex-direction: column;
+    }
+ }
  .brand__col{
+
     color: inherit;
      padding-left: 15px;
      padding-right: 15px;
@@ -55,6 +74,11 @@
          width: 50%;
      }
      
+ }
+ .brand__col h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: white;
  }
  // .brand__col1{
  //     width: 50%;
