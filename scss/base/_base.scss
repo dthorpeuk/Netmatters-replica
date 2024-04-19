@@ -262,7 +262,7 @@ small{
 }
 .container{
    // display: flex;
-    justify-content: center;
+    //justify-content: center;
     height: 100%;
     margin-left: auto;
 margin-right: auto;
@@ -280,7 +280,11 @@ width: 750px;
     width: 1200px;
 }
 }
-
+.vertical-centre{
+    display: flex;
+    align-items: center;
+    //justify-content: unset;
+}
 .testcontainer{
     display: flex;
     flex-direction: row;

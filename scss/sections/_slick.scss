@@ -79,8 +79,10 @@ picture img{
 }
 .content >*{
     text-align: center;
+    justify-content: center;
     @include mq(medium-up){
         text-align: left;
+        justify-content: left;
     }
 }
 .banner .content .container .text{
@@ -184,6 +186,7 @@ picture img{
     @include mq(medium-up){
         align-items:flex-start;
         text-align: left;
+        justify-content: left;
     }
     
 }
