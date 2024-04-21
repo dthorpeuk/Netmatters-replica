@@ -143,7 +143,12 @@
         color: map-get($drop-down-colors,$n);
     }
 }
+// @mixin side-sm-generic($n){
+//     .side-banner-icon-#{$n}{
+//         color: map-get($drop-down-colors, $n);
+//     }
 
+// }
 // @mixin display-nav-dropdown($col){
 
 // }

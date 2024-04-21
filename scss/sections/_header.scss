@@ -196,6 +196,9 @@ header{
     width:calc(100% - 2em) ;
     @include reveal(flex,x-small);
 }
+.search-bar-visible{
+    display: block;
+}
 .search-bar-small input{
     background-color: #e9e9e9;
     border: 1px solid #ccc;
@@ -278,7 +281,7 @@ header{
     }
 }
 .hamburger-box{
-    display: block;
+    display: inline-block;
     width: 33px;
     height: 19px;
     position: relative;
@@ -304,11 +307,71 @@ header{
 .hamburger-inner::after{
     bottom: -10px;
 }
-// .hamburger-inner::before{
-//     height: 56px;
+.hamburger-inner{
+    transition-duration: .22s;
+    transition-timing-function:cubic-bezier(.55,.055,.675,.19);
+}
+.side-active-ham{
+    transform: rotate(225deg);
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+.side-active-ham::before{
+    top: 0;
+}
+.side-active-ham::after{
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom .1s ease-out, transform .22s cubic-bezier(.215,.61,.355,1) .12s;
+}
+// .side-active-ham .hamburger-box .hamburger-inner{
+//     display: none;
 // }
-// .hamburger-inner::after{
-//     height: 56px;
+// .close-ham{
+//     display: none;
+//    // display: block;
+//    position: absolute;
+//     top: 50%;
+//     width: 33px;
+//     margin-top: -1.5px;
+//     transform: rotate(225deg);
+//     transition-delay: .12s;
+//     transition-timing-function: cubic-bezier(.215,.61,.355,1);
+// }
+// .close-ham::before{
+//     display: block;
+//     content:"";
+//     background-color: white;
+//     width: 33px;
+//     height: 4px;
+//    // background-color: #000;
+//     border-radius: 0;
+//     position: absolute;
+//     transition-property: transform;
+//     transition-duration: .15s;
+//     transition-timing-function: ease;
+//      top: 0;
+//     // opacity: 0;
+//      transition: top .1s ease-out, opacity .1s ease-out .12s;
+// }
+// .close-ham::after{
+//     display: block;
+//     content:"";
+//     background-color: white;
+//     width: 33px;
+//     height: 4px;
+//    // background-color: #000;
+//     border-radius: 0;
+//     position: absolute;
+//     transition-property: transform;
+//     transition-duration: .15s;
+//     transition-timing-function: ease;
+//     top: 0;
+//     transform: rotate(-90deg);
+//     transition: bottom .1s ease-out, transform .22s cubic-bezier(.215,.61,.355,1) .12s;
+// }
+// .side-active-ham .hamburger-box .close-ham{
+//     display: block;
 // }
 .icon-support::before{
     font-family: 'icomoon' !important;

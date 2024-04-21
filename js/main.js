@@ -1,3 +1,4 @@
+//Slideshows
 $(".slides").slick({
 dots:true,
 autoplay: true,
@@ -35,16 +36,14 @@ pauseOnDotsHover:true
     
         
         });
-//$('header, .nav').sticky();
-//$('.header-inner').sticky();
-//$('.nav-bar').sticky({topSpacing: "110px"});
+//Stick Header
 window.onscroll = function(e) {
-    //console.log(this.oldScroll > this.scrollY);
+    
     let elementHeader = document.querySelector(".sticky-hidden");
    
 let upNotDown = this.oldScroll > this.scrollY;
 let threshold = this.scrollY > 300;
-console.log(this.scrollY);
+//console.log(this.scrollY);
 if(upNotDown && threshold){
     //console.log(true);
     elementHeader.classList.add("sticky");
@@ -56,3 +55,49 @@ else
 }
 this.oldScroll = this.scrollY;
 }
+
+//Sidebar reveal/hide
+let elementSidebar = document.querySelector(".sidebar");
+let elementHamburger = document.querySelector(".hamburger-btn");
+let elementHamburgerInner = document.querySelector(".hamburger-inner");
+let elementContent = document.querySelector(".page-contents");
+let elementFilter = document.querySelector(".full-filter");
+elementHamburger.addEventListener('click', ()=>{
+    if(elementSidebar.classList.contains("side-visible")){
+        elementSidebar.classList.remove("side-visible");
+        elementFilter.classList.remove("side-active");
+        elementContent.classList.remove("side-active-pc");
+        elementHamburgerInner.classList.remove("side-active-ham");
+    }
+    else{
+        elementSidebar.classList.add("side-visible");
+        elementFilter.classList.add("side-active");
+        elementContent.classList.add("side-active-pc");
+        elementHamburgerInner.classList.add("side-active-ham");
+    }
+    
+    
+
+});
+elementFilter.addEventListener('click', ()=>{
+    if(elementSidebar.classList.contains("side-visible")){
+        elementSidebar.classList.remove("side-visible");
+        elementFilter.classList.remove("side-active");
+        elementContent.classList.remove("side-active-pc");
+        elementHamburgerInner.classList.remove("side-active-ham");
+    }
+
+      
+
+});
+//Searchbar Reveal/Hide
+let elementSearchbar = document.querySelector(".search-box");
+let elementSearchButton = document.querySelector(".search-bar button");
+elementSearchButton.addEventListener('click',()=>{
+    if(elementSearchbar.classList.contains("search-bar-visible")){
+        elementSearchbar.classList.remove("search-bar-visible");
+    }
+    else{
+        elementSearchbar.classList.add("search-bar-visible");
+    }
+});

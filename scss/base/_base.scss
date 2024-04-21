@@ -260,6 +260,59 @@ header{
 small{
     font-size: 0.625rem;
 }
+
+// .page-contents::after{
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: 0;
+//     height: 0;
+//     background: rgba(0, 0, 0, .4);
+//     z-index: 10;
+//     content: "";
+//     opacity: 0;
+//     transition: opacity .5s, width .1s .5s, height .1s .5s;
+// }
+.page-contents{
+    overflow: hidden;
+    //transition: all .5s;
+    transition: all .5s;
+    left: 0;
+    position: relative;
+   // z-index: 9;
+   background-color: white;
+}
+.page-contents.side-active-pc{
+   
+}
+.full-filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+   // right: 10000px;
+    top: 0;
+    pointer-events: none;
+    z-index: 10;
+     opacity: 0;
+    
+}
+.side-active-pc {
+    width: 100%;
+    position: relative;
+    left: -275px;
+    transition: all .5s;
+    @include mq(medium-up){
+        left: -350px;
+    }
+
+}
+.side-active{
+    opacity: 1;
+    pointer-events:all;
+    cursor: pointer;
+}
+
 .container{
    // display: flex;
     //justify-content: center;
