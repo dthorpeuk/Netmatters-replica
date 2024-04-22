@@ -279,7 +279,7 @@ small{
     transition: all .5s;
     left: 0;
     position: relative;
-   // z-index: 9;
+    z-index: 1;
    background-color: white;
 }
 .page-contents.side-active-pc{
@@ -290,8 +290,9 @@ small{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
-   // right: 10000px;
+   
     top: 0;
+    left: 0;
     pointer-events: none;
     z-index: 10;
      opacity: 0;
@@ -311,6 +312,11 @@ small{
     opacity: 1;
     pointer-events:all;
     cursor: pointer;
+    left: -275px;
+    transition: all .5s;
+    @include mq(medium-up){
+        left: -350px;
+    }
 }
 
 .container{

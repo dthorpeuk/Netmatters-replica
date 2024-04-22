@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 0;
     height: 100%;
     background-color: #333645;
     width: 275px;
@@ -22,6 +22,9 @@
     display: none;
     padding: 21px;
     @include reveal(block, small-down);
+}
+.sidebar>.sidebar-sm>ul>li:hover>a {
+    background-color: hsla(0, 0%, 100%, .05);
 }
 .sidebar-sm ul{
     margin: -20px 0 0;

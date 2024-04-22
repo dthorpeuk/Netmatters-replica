@@ -3,6 +3,8 @@ $(".slides").slick({
 dots:true,
 autoplay: true,
 autoplaySpeed: 2000,
+slidesToShow: 1,
+slidesToScroll: 1,
 arrows: false,
 draggable:true,
 pauseOnHover:true,
@@ -11,12 +13,14 @@ pauseOnDotsHover:true
 });
 $(".ticker1").slick({
     //dots:true,
-    slidesToShow: 10,
+    // slidesToShow: 10,
+    slidesToScroll: 1,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
     draggable:false,
+    variableWidth:true,
     pauseOnHover:true,
 pauseOnDotsHover:true
 
@@ -24,12 +28,14 @@ pauseOnDotsHover:true
     });
     $(".ticker2").slick({
         //dots:true,
-        slidesToShow: 12,
-        infinite: true,
+       // slidesToShow: 12,
+       slidesToScroll: 1,
+       infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         draggable:false,
+        variableWidth:true,
         pauseOnHover:true,
 pauseOnDotsHover:true
         
@@ -58,22 +64,43 @@ this.oldScroll = this.scrollY;
 
 //Sidebar reveal/hide
 let elementSidebar = document.querySelector(".sidebar");
-let elementHamburger = document.querySelector(".hamburger-btn");
-let elementHamburgerInner = document.querySelector(".hamburger-inner");
+let elementHamburger = document.querySelectorAll(".hamburger-btn");
+let elementHamburgerInner = document.querySelectorAll(".hamburger-inner");
 let elementContent = document.querySelector(".page-contents");
 let elementFilter = document.querySelector(".full-filter");
-elementHamburger.addEventListener('click', ()=>{
+elementHamburger[0].addEventListener('click', ()=>{
     if(elementSidebar.classList.contains("side-visible")){
         elementSidebar.classList.remove("side-visible");
         elementFilter.classList.remove("side-active");
         elementContent.classList.remove("side-active-pc");
-        elementHamburgerInner.classList.remove("side-active-ham");
+        elementHamburgerInner[0].classList.remove("side-active-ham");
+        elementHamburgerInner[1].classList.remove("side-active-ham");
     }
     else{
         elementSidebar.classList.add("side-visible");
         elementFilter.classList.add("side-active");
         elementContent.classList.add("side-active-pc");
-        elementHamburgerInner.classList.add("side-active-ham");
+        elementHamburgerInner[0].classList.add("side-active-ham");
+        elementHamburgerInner[1].classList.add("side-active-ham");
+    }
+    
+    
+
+});
+elementHamburger[1].addEventListener('click', ()=>{
+    if(elementSidebar.classList.contains("side-visible")){
+        elementSidebar.classList.remove("side-visible");
+        elementFilter.classList.remove("side-active");
+        elementContent.classList.remove("side-active-pc");
+        elementHamburgerInner[0].classList.remove("side-active-ham");
+        elementHamburgerInner[1].classList.remove("side-active-ham");
+    }
+    else{
+        elementSidebar.classList.add("side-visible");
+        elementFilter.classList.add("side-active");
+        elementContent.classList.add("side-active-pc");
+        elementHamburgerInner[0].classList.add("side-active-ham");
+        elementHamburgerInner[1].classList.add("side-active-ham");
     }
     
     
@@ -84,7 +111,8 @@ elementFilter.addEventListener('click', ()=>{
         elementSidebar.classList.remove("side-visible");
         elementFilter.classList.remove("side-active");
         elementContent.classList.remove("side-active-pc");
-        elementHamburgerInner.classList.remove("side-active-ham");
+        elementHamburgerInner[0].classList.remove("side-active-ham");
+        elementHamburgerInner[1].classList.remove("side-active-ham");
     }
 
       
@@ -100,4 +128,24 @@ elementSearchButton.addEventListener('click',()=>{
     else{
         elementSearchbar.classList.add("search-bar-visible");
     }
+});
+//Manage Consent
+let elementConsent = document.querySelector(".manage-consent");
+let elementDialog = document.querySelector(".cookie-dialog-background");
+let elementAccept = document.querySelector(".dialog-row div + div");
+elementConsent.addEventListener('click',()=>{
+   // if(elementDialog.classList.contains("dialog-visible")){
+       // elementDialog.classList.remove("dialog-visible");
+   // }else{
+        elementDialog.classList.add("dialog-visible");
+    //}
+
+});
+elementAccept.addEventListener('click',()=>{
+   // if(elementDialog.classList.contains("dialog-visible")){
+        elementDialog.classList.remove("dialog-visible");
+    //}else{
+        //elementDialog.classList.add("dialog-visible");
+   // }
+
 });
