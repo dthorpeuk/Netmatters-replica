@@ -21,7 +21,7 @@
         }
     }
     @else if $s == "medium"{
-        @media (min-width: $brkpoint-md) and (max-width: $brkpoint-xmd-one){
+        @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg-one){
             @content;
         }
     }
@@ -31,7 +31,7 @@
         }
     }
     @else if $s == "medium-down"{
-        @media (max-width: $brkpoint-xmd-one){
+        @media (max-width: $brkpoint-lg-one){
             @content;
         }
     }

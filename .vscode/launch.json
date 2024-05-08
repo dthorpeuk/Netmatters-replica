@@ -5,11 +5,14 @@
     "version": "0.2.0",
     "configurations": [
 
+
+
+
         {
             "name": "Launch Edge",
             "request": "launch",
             "type": "msedge",
-            "url": "file:///C:/Users/Daniel/OneDrive/Documents/Treehouse stuff/Netmatters-Replica/index.html",
+            "url": "file:///C:/xampp/htdocs/Netmatters-Replica-php/contact-us.html",
             "webRoot": "${workspaceFolder}"
         },
         {

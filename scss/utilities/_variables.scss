@@ -164,7 +164,10 @@ $button-text-default : 'Poppins', 'sans-serif';
 .icon-megaphone::before{
   content: "\e911";
 }
-
+.icon-chevron-down::before{
+  font-family: 'icomoon';
+  content: "\e922";
+}
 //Color Constants
 //Often Reused Colors
 $marble-blue: #67809f;
