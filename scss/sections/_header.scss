@@ -46,7 +46,7 @@ header{
     display: flex;
 }
 .header-inner .row{
-   @include mq(x-small){
+   @include mq(x-small-down){
     display: table;
     width: 100%;
     margin: 0;
@@ -66,8 +66,10 @@ header{
     //  }
     flex: 0 0 auto;
     max-width: 100%;
-        @include mq(x-small){
-            padding: 0;
+    padding: 0 15px;
+    position: relative;
+        @include mq(x-small-down){
+            padding: 0 ;
     display: table-cell;
     float: none;
     vertical-align: middle;
@@ -77,7 +79,7 @@ header{
         width: 50%;
     }
     @include mq(medium){
-        width: 41.6666667%;
+       width: 41.6666667%;
     }
     @include mq(large){
         width: 33.3333333%;
@@ -109,9 +111,10 @@ header{
 }
 .header-logo img{
    // margin: auto;
+   display: block;
     max-width: 100%;
     @include mq(small-up){
-        height: 64.42px;
+       // height: 64.42px;
     }
 }
 .header-buttons{
@@ -225,7 +228,7 @@ header{
     // width:calc(100% - 2em) ;
     margin-top: 11px;
     position: relative;
-    @include reveal(flex,x-small);
+    @include reveal(flex,x-small-down);
 }
 .search-bar-visible{
     display: block;
@@ -248,6 +251,7 @@ header{
     border-radius: 2px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-size: 14px;
 
 
 }
@@ -313,7 +317,7 @@ outline: none;
     width: 100%;
     color: black;
     font-size: 2rem;
-    @include reveal(flex,x-small);
+    @include reveal(flex,x-small-down);
 }
 .search-bar button{
     

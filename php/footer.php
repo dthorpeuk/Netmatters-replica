@@ -1,18 +1,18 @@
-<?php 
-  //  echo "Footer loaded";
-?>
+
 <footer>
             <div class="container footer">
                 <div class="footer-content">
                     <div class="footer-company-info">
+                        <div class = "footer-social-menu">
                         <div class="footer-logo">
                             <img src="images/nm-logo-white-med.webp" alt="Netmatters Logo">
+                        </div>
                             <h4>Follow Us On:</h4>
                             <div class="footer-social">
-                                    <a href="#" class = "btn-faceb"><div class="icon-faceb social-icon"></div></a>
-                                    <a href="#" class = "btn-linked"><div class="icon-linked social-icon"></div></a>
-                                    <a href="#" class = "btn-twitter"><div class="icon-twitter social-icon"></div></a>
-                                    <a href="#" class = "btn-inst"><div class="icon-inst social-icon"></div></a>
+                                    <a href="#" class = "btn-faceb"><span class="icon-faceb social-icon"></span></a>
+                                    <a href="#" class = "btn-linked"><span class="icon-linked social-icon"></span></a>
+                                    <a href="#" class = "btn-twitter"><span class="icon-twitter social-icon"></span></a>
+                                    <a href="#" class = "btn-inst"><span class="icon-inst social-icon"></span></a>
 
                             </div>
                         </div>

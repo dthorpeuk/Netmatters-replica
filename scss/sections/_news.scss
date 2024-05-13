@@ -158,6 +158,7 @@
     flex-direction: row;
     gap: 10px;
 }
+
 .image-standard{
     display:block;
     width: 100%;
@@ -169,10 +170,17 @@
 .news-content{
     margin: 25px;
 }
+.news-user-details{
+    font-size: 0.875rem;
+    
+}
+.news-user-details strong{
+    font-weight: 600;
+}
 .news-user-avatar{
   //  width: 1%;
     border-radius: 50%;
- //   overflow: hidden;
+   overflow: hidden;
 
 }
 // .news-items .arrow-link{

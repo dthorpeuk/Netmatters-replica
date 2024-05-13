@@ -11,7 +11,7 @@
 }
  .brand-container{
      padding-top: 50px;
-     padding-bottom: 50px;
+    // padding-bottom: 50px;
      padding-left:15px;
      padding-right: 15px;
      margin-left: auto;
@@ -20,28 +20,26 @@
      color: white;
      //width: 1170px;
  @include mq(x-small){
-     //display: flex;
-     //flex: auto;
-     width: 100%;
-     flex-direction: column;
+
+    // width: 100%;
+    // flex-direction: column;
  }
  @include mq(small-down){
-     width: 750px;
-     // display: flex;
-     // flex: auto;
-     width: 100%;
-     flex-direction: column;
+   //  width: 750px;
+
+   //  width: 100%;
+   //  flex-direction: column;
  }
  // @include mq(small-up){
  
  // }
  @include mq(medium-up){
-     width: 970px;
+   //  width: 970px;
      
-     flex-direction: row;
+     //flex-direction: row;
  }
  @include mq(large){
-     width: 1170px;
+   //  width: 1170px;
  }
      
  }
@@ -49,6 +47,7 @@
     display: flex;
     margin-left: -15px;
     margin-right: -15px;
+    flex-wrap: wrap;
     @include mq(x-small){
         //display: flex;
         //flex: auto;
@@ -93,6 +92,10 @@
      margin: 0 0 10px;
      margin-bottom: 25px;
  }
+ .brand__col1  .brandbtn{//:first-child{
+    margin-bottom: 17px;
+    margin-right: 10px;
+ }
  .brand__col2 p{
      font-weight: 600;
      font-size: 1.3rem;
@@ -106,25 +109,33 @@
  }
  .brand__col__buttons{
      display: flex;
-     gap:10px;
     // flex-wrap: wrap;
-     margin-top: auto;
-     //margin-top: 25px;
+   //  gap:10px;
+   
+     //margin-top: auto;
+     
      margin-bottom: 25px;
      flex-direction: column;
      //justify-items: start;
-     @include mq(large){
+     @include mq(small-up){
          flex-direction: row;
          //flex-wrap: nowrap;
      }
+     @include mq(medium){
+        flex-direction: column;
+        //flex-wrap: nowrap;
+    }
+ }
+ .brand__col2 .brand__col__buttons{
+    margin-top: 12px;
  }
  .brand__col__buttons .btn{
      display: flex;
      align-items: center;
-     
+     max-width: fit-content;
    //  flex-wrap: wrap;
-     @include mq(medium-down){
-         margin-right: auto;
+     @include mq(small-down){
+        // margin-right: auto;
      }
      
  
@@ -144,6 +155,11 @@
      border-radius: 6px;
      flex-wrap: nowrap;
      margin-top: 25px;
+     margin-right: 10px;
+
+     @include mq(large){
+        margin-top: 0;
+     }
  }
  .trustbtn{
     
@@ -153,6 +169,9 @@
      border-radius: 6px;
      flex-wrap: nowrap;
      margin-top: 25px;
+     @include mq(large){
+        margin-top: 0;
+     }
  }
  .brandbtn:hover{
 background-color:#121318;

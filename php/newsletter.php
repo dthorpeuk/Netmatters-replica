@@ -27,12 +27,18 @@
                     <!-- <input type="checkbox" class="checkboxObj" value="1" > -->
                 </label>
                   
-             <span class="checkbox-text">
+             <!-- <span class="checkbox-text">
                 <label for="checkbox_input" class="nl-checkbox-text">
                     Please tick this box if you wish to receive marketing information from us.
                     Please see our</label><span> <a href="#" class="privacy">Privacy Policy</a></span><label for="checkbox_input" class="nl-checkbox-text">&nbsp; for more information on how we keep your data safe.
                     </label>
-                </span>
+                </span> -->
+                <label for="checkbox_input" class="nl-checkbox-text">
+<span class="checkbox-text">
+    Please tick this box if you wish to receive marketing information from us.
+    Please see our<span> <a href="#" class="privacy">Privacy Policy</a></span>&nbsp; for more information on how we keep your data safe.
+    </span>    
+</label>
                     
             </div>
             <button name="submit" class="btn">Subscribe</button>

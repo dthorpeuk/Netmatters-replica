@@ -63,6 +63,10 @@
 .sidebar-sm ul li{
     //padding: 20px 0 0;
 }
+.sidebar-sm .side-link-text{
+    font-size:  1rem;
+}
+
 .side-menu-banner{
     padding: 20px 0 0;
 }
@@ -114,4 +118,7 @@ li:hover .group {
     font-size: .875rem;
     text-decoration: none;
     position: relative;
+}
+.sidebar-sm .side-menu-item a.side-content{
+    padding: 10px;
 }

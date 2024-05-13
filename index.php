@@ -466,6 +466,7 @@ include 'php/consent.php';
             </P>
             <div class="brand__col__buttons brand__col1__buttons">
                 <a href="" class = "btn brandbtn">Why Choose Us?&nbsp;&nbsp;<span class="icon-arrow"></span></a>
+                
                 <a href="" class = "btn brandbtn">Our Culture&nbsp;&nbsp;<span class="icon-arrow"></span></a>
             </div>
         </div>
@@ -485,6 +486,7 @@ include 'php/consent.php';
         </p>
         <div class="brand__col__buttons brand__col2__buttons">
             <a href="" class = "btn googlebtn">Google Reviews&nbsp;&nbsp;<span class="icon-arrow"></span></a>
+            
             <a href="" class = "btn trustbtn">Trustpilot Reviews&nbsp;&nbsp;<span class="icon-arrow"></span></a>
         </div>
         </div>

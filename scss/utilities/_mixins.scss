@@ -1,7 +1,22 @@
 //Media Queries
 @mixin mq($s){
-    @if $s == "x-small"{
+    @if $s == "xx-small"{
+        @media (min-width: $brkpoint-xxsm) and (max-width:  $brkpoint-xsm-one ){
+            @content;
+        }
+    }
+    @else if $s == "x-small"{
+        @media (min-width: $brkpoint-xsm) and (max-width:  $brkpoint-sm-one ){
+            @content;
+        }
+    }
+    @else if $s == "x-small-down"{
         @media (max-width:  $brkpoint-sm-one ){
+            @content;
+        }
+    }
+    @else if $s == "x-small-up"{
+        @media (min-width: $brkpoint-xsm){
             @content;
         }
     }
