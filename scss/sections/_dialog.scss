@@ -43,6 +43,12 @@
     outline: none;
    // max-width: 600px;
 }
+.dialog-content p{
+    color: #666;
+}
+.dialog-content p a{
+    color:#333645;
+}
 .dialog-header{
     padding: 15px 20px;
     border-bottom: 1px solid #e5e5e5;
@@ -76,14 +82,15 @@ p a:hover{
     display: table;
 }
 .dialog-row{
-   // margin-left: -15px;
-  //  margin-right: -15px;
+   margin-left: -15px;
+   margin-right: -15px;
     display: flex;
-    gap: 20px;
+    
     justify-content: space-around;
    // flex-wrap: wrap;
    @include mq(x-small){
     flex-direction: column;
+    gap: 20px;
    }
 }
 .dialog-row::before{
@@ -100,19 +107,21 @@ p a:hover{
     padding-left: 15px;
     padding-right: 15px;
     float: left;
-    width: 40%;
+    width: 50%;
     // max-width: 264px;
     // height: 47px;
-    background-color: #999AA2;
+    //background-color: #999AA2;
     text-align: center;
     @include mq(x-small){
         width: 90%;
        }
 }
-.dialog-row div + div{
-@include standard-text-button($dark-lavender,$dark-lavender-h);
-}
+
 .dialog-row div a{
-   // background-color: black;
+  @include  standard-text-button(#999AA2,#999AA2);
     width: 100%;
+    
 }
+.dialog-row div + div>a{
+    @include standard-text-button($dark-lavender,$dark-lavender-h);
+    }
