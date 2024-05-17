@@ -1,44 +1,44 @@
 <?php 
-$html = " <div class='news-item'>
-    <a class='article-link'></a>
-    <div class='image-container'>
-       <a href='' class='category cat-1'>News</a>
-       <a href='' class='image-standard'><img src='images/news-item1.png' alt='News Item 1'></a>
-    </div>
-    <div class='news-content'>
-        <h3>
-            <a href ='#'>
-                Emily Mackley - Netmatters 5 Year Legend
-            </a>
-        </h3>
-        <p>Today, we celebrate the brilliant accomplishments of Emily Mackley as she receives the 5 Year Legend...</p>
-    <a class='btn btn-cat-1 cat-1' href='#'>Read More</a>
-    <div class='news-user'>
-        <div class = 'news-user-avatar'>
-            <img src='images/netmatters-avatar.webp' alt>
-        </div>
-        <div class='news-user-details'>
-            <strong>Posted by Netmatters</strong>
-            <br>
-            <span>6th March 2024</span>
+// $html = " <div class='news-item'>
+//     <a class='article-link'></a>
+//     <div class='image-container'>
+//        <a href='' class='category cat-1'>News</a>
+//        <a href='' class='image-standard'><img src='images/news-item1.png' alt='News Item 1'></a>
+//     </div>
+//     <div class='news-content'>
+//         <h3>
+//             <a href ='#'>
+//                 Emily Mackley - Netmatters 5 Year Legend
+//             </a>
+//         </h3>
+//         <p>Today, we celebrate the brilliant accomplishments of Emily Mackley as she receives the 5 Year Legend...</p>
+//     <a class='btn btn-cat-1 cat-1' href='#'>Read More</a>
+//     <div class='news-user'>
+//         <div class = 'news-user-avatar'>
+//             <img src='images/netmatters-avatar.webp' alt>
+//         </div>
+//         <div class='news-user-details'>
+//             <strong>Posted by Netmatters</strong>
+//             <br>
+//             <span>6th March 2024</span>
 
-        </div>
-    </div>
-    </div>
-</div>";
+//         </div>
+//     </div>
+//     </div>
+// </div>";
 include 'databaseconnect.php';
 // $query = "SELECT * FROM news_item ORDER BY date DESC";
 // $res = $conn->query($query);
-function foreignQuery($id,$col,$loc_conn){
-    $fq = "SELECT * FROM author WHERE id = $id";
-    $loc = $loc_conn->query($fq);
-    //Should only be one return
-    foreach($loc as $lrow){
-        return $lrow[$col];
-    }
+// function foreignQuery($id,$col,$loc_conn){
+//     $fq = "SELECT * FROM author WHERE id = $id";
+//     $loc = $loc_conn->query($fq);
+//     //Should only be one return
+//     foreach($loc as $lrow){
+//         return $lrow[$col];
+//     }
     
     
-}
+// }
 function dateQuery($id,$loc_conn){
     $dq = "SELECT DATE_FORMAT(date, '%D %M %Y') date FROM news_item WHERE news_item.id = $id";
     $loc = $loc_conn->query($dq);
@@ -50,7 +50,7 @@ function dateQuery($id,$loc_conn){
     
 }
 
-foreignQuery(0,'name',$conn);
+//foreignQuery(0,'name',$conn);
 $query = "SELECT news_item.id, headline,link,description,news_item.image_src AS news_img, author.image_src AS author_img, category, colour, date, name FROM news_item INNER JOIN author ON news_item.author_id = author.id ORDER BY date DESC LIMIT 3";
 $res = $conn->query($query);
 
